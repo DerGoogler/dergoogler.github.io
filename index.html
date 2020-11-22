@@ -11363,7 +11363,7 @@
     <!-- START extlib/js/highlight-7.3.pack.min.js -->
     <script type="text/javascript">
         /* highlight.js Copyright (c) 2006, Ivan Sagalaev. Licensed under BSD 3-clause.
-                                                                                                                                                                                                                                                           See https://github.com/isagalaev/highlight.js/blob/master/LICENSE */
+                                                                                                                                                                                                                                                                           See https://github.com/isagalaev/highlight.js/blob/master/LICENSE */
         var hljs = new function() {
             function l(o) {
                 return o.replace(/&/gm, "&amp;").replace(/</gm, "&lt;").replace(/>/gm, "&gt;")
@@ -14492,7 +14492,7 @@
                 function o() {
                     var a = "",
                         b = window.location.hash || "";
-                    "" === b || "#" === b || "#!" === b ? a = "#!index.md" : b.startsWith("#!") && b.endsWith("/") && (a = b + "index.md"), a && (window.location.hash = a)
+                    "" === b || "#" === b || "#!" === b ? a = "#home" : b.startsWith("#!") && b.endsWith("/") && (a = b + "index.md"), a && (window.location.hash = a)
                 }
                 var p = a.md.getLogger();
                 b();
@@ -15001,7 +15001,7 @@
                 function j() {
                     if (0 !== a("#md-menu").find("li").length) {
                         var b = window.location.hash;
-                        0 === b.length && (b = "#!index.md");
+                        0 === b.length && (b = "#home");
                         var c = 'li:has(a[href="' + b + '"])';
                         a("#md-menu").find(c).addClass("active")
                     }
