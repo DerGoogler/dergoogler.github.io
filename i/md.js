@@ -605,7 +605,7 @@ function googlemapsReady() {
         function o() {
             var a = "",
                 b = window.location.hash || "";
-            "" === b || "#" === b || "#!" === b ? a = "#home" : b.startsWith("#!") && b.endsWith("/") && (a = b + "index.md"), a && (window.location.hash = a)
+            "" === b || "#" === b || "#!" === b ? a = "#home.md" : b.startsWith("#!") && b.endsWith("/") && (a = b + "home.md"), a && (window.location.hash = a)
         }
         var p = a.md.getLogger();
         b();
@@ -1114,7 +1114,7 @@ function googlemapsReady() {
         function j() {
             if (0 !== a("#md-menu").find("li").length) {
                 var b = window.location.hash;
-                0 === b.length && (b = "#home");
+                0 === b.length && (b = "#home.md");
                 var c = 'li:has(a[href="' + b + '"])';
                 a("#md-menu").find(c).addClass("active")
             }
