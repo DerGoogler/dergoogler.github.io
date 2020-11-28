@@ -1,30 +1,44 @@
-# About Me
-Hello, I am an 18 year old developer from Germany.
+### Hi there, I'm Jimmy - aka [Der_Googler][website] 👋
 
-## My Projects
-- [Vue.js Template](https://github.com/DerGoogler/Vue.js)
-- [Website](https://github.com/DerGoogler/dergoogler.github.io)
+[![Website](https://img.shields.io/website?label=dergoogler.github.io&style=for-the-badge&url=https%3A%2F%2Fdergoogler.github.io)](https://dergoogler.github.io)
+[![Twitter Follow](https://img.shields.io/twitter/follow/Der_Googler?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FDer_Googler&screen_name=Der_Googler)
 
-## My Apps
-All the apps listed here are available!
-<br>
+### Connect with me:
+
+[<img align="left" alt="dergoogler.github.io" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
+[<img align="left" alt="Der_Googler | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
+[<img align="left" alt="Der_Googler | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]   
+[<img align="left" alt="Der_Googler | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+
+<br />
+
+### Languages and Tools:
+
+<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
+<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
+<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
+<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+
+<br />
+<br />
+
+---
+
+### 📱 Apps
+
+<!-- Apps-POST-LIST:START -->
+- [Text To Speech Hybrid (TTS)](https://play.google.com/store/apps/details?id=com.dergoogler.hybridtts)
 - [Bota64 App](https://play.google.com/store/apps/details?id=com.dergoogler.bota64)
+<!-- Apps-POST-LIST:END -->
 
-## My Stats
-[![dg’s github stats](https://github-readme-stats.vercel.app/api?username=dergoogler&show_icons=true&line_height=21&show_icons=true&theme=vue)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dergoogler&show_icons=true&layout=compact&theme=vue)](https://github.com/anuraghazra/github-readme-stats)
+---
 
-## Why Bota64?
-I wanted my own encryption tool,
-that's why I developed Bota64!
-<br>
-Bota64 is written with the following components:
-- HTML
-- CSS
-- JS
-- JAVA
-- ONSENUI (it used HTML, CSS & JS)
-<br>
-To get some values in a dialog use i a javascript interface.
-<br>
-🤓
+# GitHub Stats
+  <img align="left" alt="Der_Googler's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=dergoogler&show_icons=true&hide_border=true" />
+----
+
+[website]: https://dergoogler.github.io
+[twitter]: https://twitter.com/der_googler
+[youtube]: https://www.youtube.com/channel/UCSWFlN7Bq-zJENqCFGiIaqw
+[instagram]: https://instagram.com/der_googler
