@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" href="/i/md.css">
+    <link rel="stylesheet" href="/i/md2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="fragment" content="!">
     <link rel="shortcut icon" type="image/x-icon" href="/i/google_512px.png" />
@@ -13,27 +14,59 @@
     <script src="/i/md2.js"></script>
     <script src="/i/md.js"></script>
 </head>
+<style>
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+    
+    @media (max-width: 767px) {
+        .markdown-body {
+            padding: 15px;
+        }
+    }
+</style>
 
-<body class="__fb-dark-mode">
-    <section class="page-header">
-        <p><b class="project-name">Der_Googler</b></p>
-        <img src="https://badgen.net/badge/2017%20/Der_Googler/orange">
-    </section>
-
-    <section class="main-content">
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="/">
+                    <img style="border: 2px solid #fff; border-radius: 100px;" src="/i/google_512px.png" width="30" height="30" alt="Der_Googler"> </a>
+                <span><a title="Home" href="/">
+                        <span class="separator">|</span> Official</a>
+                </span>
+            </div>
+        </header>
+    </div>
+    <article class="markdown-body">
         <div id="md-all"></div>
 
-        <footer class="site-footer">
 
-            <span class="site-footer-owner"><a href="https://github.com/dergoogler">Der_Googler</a> &copy; 2020</span>
 
+        <!--<footer class="site-footer">
+            <span class="site-footer-owner"><a href="https://github.com/dergoogler">Der_Googler</a> &copy;
+                2020</span>
             <span class="site-footer-credits"><a href="/#!/safty/impressum.md">Impressum</a></span>
-        </footer>
-    </section>
+        </footer>-->
+    </article>
+    <div class="footer">
+        <div class="footer-inner">
 
+            <section class="copyright-wrapper">
+                <p class="copyright">Copyright © 2020.
+                    <span id="year"></span> <a title="Home" href="/">Official | Der_Googler</a>. All Rights Reserved.
+                </p>
+            </section>
 
-
-
+            <section class="footer-book-demo">
+                <a href="#!/safty/impressum.md">Impressum</a>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
