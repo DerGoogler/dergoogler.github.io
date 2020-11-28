@@ -7,7 +7,11 @@
 
 [<img align="left" alt="dergoogler.github.io" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 [<img align="left" alt="Der_Googler | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
+<<<<<<< HEAD
 [<img align="left" alt="Der_Googler | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]   
+=======
+[<img align="left" alt="Der_Googler | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+>>>>>>> 508effb16fc0d14c9aee1815cbff09dbdd9b7a11
 [<img align="left" alt="Der_Googler | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
 <br />
@@ -33,7 +37,6 @@
 <!-- Apps-POST-LIST:END -->
 
 ---
-
 # GitHub Stats
   <img align="left" alt="Der_Googler's GitHub Stats" src="https://github-readme-stats.codestackr.vercel.app/api?username=dergoogler&show_icons=true&hide_border=true" />
 ----
