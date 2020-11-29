@@ -11,9 +11,14 @@ Some things cannot/could not be resolved yet
 # Log
 ### Added
 - Darkmode
+- Telegram channel link
+- Popover
+- Share App
 
 ### Fixed
 - Android 11 don't speak bug
+- Imprint link
+- Privacy Policy link
 
 ### Changed
 - "How to use"
