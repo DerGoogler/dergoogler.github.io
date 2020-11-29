@@ -1,4 +1,4 @@
-# Hybrid TTS <img src="https://badgen.net/badge/Build/Android%20Studio/green">
+# Hybrid TTS [badge(Build%20)(Android%20Studio)(green)]
 The Easyst Hybrid TTS Tool!
 
 ## App Infos
@@ -21,15 +21,15 @@ The Easyst Hybrid TTS Tool!
 What makes Hybrid TTS so special?
 It's in the source code because it's written in such a way that it can't even crash!
 
-**Features to come**
-- pitch
-- speed
+**Features**
+- [x] Speak
+- [ ] Pitch
+- [ ] Speed
+- [ ] Save as audio
 
 And maybe different
 
 Have fun!
-
-
 
 ## Screenshots
 *Images that are available in the app are protected by copyright by the owners!*
@@ -48,4 +48,4 @@ JAVA logo: **Google**<br>
 JavaScript Logo: **Google**<br>
 HTML Logo: **Google**
 <br>
-<center> <a class="btn2" href="https://play.google.com/store/apps/details?id=com.dergoogler.hybridtts">Download</a> </center>
+<center>[download(Download)(https://play.google.com/store/apps/details?id=com.dergoogler.hybridtts)]</center>
