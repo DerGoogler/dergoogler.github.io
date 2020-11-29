@@ -937,7 +937,7 @@ function googlemapsReady() {
                     f = !1, e.fadeOut(200)
                 }), e.appendTo(b)
             }
-
+            /*
             function c(b) {
                 if (a.md.config.useSideMenu !== !1 && "H2" === b.prop("tagName")) {
                     var c = a.md.config.tocAnchor;
@@ -949,6 +949,7 @@ function googlemapsReady() {
                     }
                 }
             }
+            */
             a("h1,h2,h3,h4,h5,h6").not("#md-title h1").each(function() {
                 var d = a(this);
                 d.addClass("md-inpage-anchor");

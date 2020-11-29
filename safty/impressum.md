@@ -9,7 +9,6 @@ Sollten Probleme auftreten oder sonstiges, dann kontaktieren Sie mich bitte unte
 
 ## Konzeption, Gestaltung und Realisierung
 - Hoster: [Github](https://github:com)
-- Design: [Onsen UI](https://onsen.io)
 
 ## Domains
 - https://dergoogler.github.io

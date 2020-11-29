@@ -1,7 +1,21 @@
 # Hybrid TTS <img src="https://badgen.net/badge/Build/Android%20Studio/green">
 The Easyst Hybrid TTS Tool!
 
-# Description
+## App Infos
+| App Name            | Hybrid TTS                         |
+|---------------------|------------------------------------|
+| Package Name        | com\.dergoogler\.hybridtts         |
+| Version Code        | 824265                             |
+| Version Name        | 6423443                            |
+| Minimum SDK Version | 23                                 |
+| Taget SDK Version   | 30                                 |
+| Compile SDK Version | 30                                 |
+| Autostart           | com\.dergoogler\.tts\.MainActivity |
+| Permissions         | INTERNET, TTS\_SERVICE             |
+| Backupable          | false                              |
+| Developed With      | JAVA, XML, JS, HTML, CSS & JQUERY  |
+
+## Description
 > **Why did I develop it?**<br>I want to help people with language bindings and I am very small and compact.
 
 What makes Hybrid TTS so special?
@@ -17,7 +31,7 @@ Have fun!
 
 
 
-# Screenshots
+## Screenshots
 *Images that are available in the app are protected by copyright by the owners!*
 <hr>
 <img src="https://play-lh.googleusercontent.com/YxlecGu5AY22aBpH-38fyaGmUjBr1O-qH2LznUQhJNDXpMYxRZBDTRk8VnadyFwJN2Fa=w720-h310-rw">&nbsp;<img src="https://play-lh.googleusercontent.com/JL0rFzZyZ391nwWzdxvAxivdyVdjhX8_2zEGHEbat_g_o-Vodbcjp_lPuOaY5MEWhMk=w720-h310-rw">
