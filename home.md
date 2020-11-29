@@ -5,6 +5,9 @@ Welcome to my website!
 - [Bota64](/apps/bota64.md)
 - [Hybrid TTS](/apps/hybridtts.md)
 
+# Blog
+- [Termux PHP localhost](/blog/termux-php-localhost.md)
+
 # Safty
 - [Impressum](/safty/impressum.md)
 - [Hybrid TTS Privacy Policy](/safty/hybridtts-privacy-policy.md)
