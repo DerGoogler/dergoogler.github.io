@@ -1,5 +1,5 @@
 # Hybrid TTS Changelog
-Version Code: **7454**<br>
+Version Code: **7454**    
 Version Name: **578563**
 
 ### Legend
