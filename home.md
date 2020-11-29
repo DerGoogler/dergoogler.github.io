@@ -9,3 +9,6 @@ Welcome to my website!
 - [Impressum](/safty/impressum.md)
 - [Hybrid TTS Privacy Policy](/safty/hybridtts-privacy-policy.md)
 - [Bota64 App Privacy Policy](/safty/bota64-privacy-policy.md)
+
+# Changelogs
+- [Hybrid TTS Ver-7454](/changelogs/hybridtts-v7454.md)
