@@ -14,4 +14,4 @@ Welcome to my website!
 - [Bota64 App Privacy Policy](/safty/bota64-privacy-policy.md)
 
 # Changelogs
-- [Hybrid TTS Ver-7454](/changelogs/hybridtts-v7454.md)
+- [Hybrid TTS Ver-824265](/changelogs/hybridtts-v824265.md)
