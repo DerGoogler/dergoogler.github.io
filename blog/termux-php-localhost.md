@@ -12,7 +12,8 @@ Commands for creating localhost using Termux are listed below:- To understand mo
 - `apt install termux-api php`
 - `mkdir /sdcard/php`
 > Need you an index.html? Here:
-```
+
+```html
 <!DOCTYPE html>
 <html>
 
@@ -28,6 +29,7 @@ Commands for creating localhost using Termux are listed below:- To understand mo
 
 </html>
 ```
+
 - `cd /sdcard/php`
 - `php -S localhost:8080 -t /sdcard/php/` <kbd>To start the server</kbd>
 
