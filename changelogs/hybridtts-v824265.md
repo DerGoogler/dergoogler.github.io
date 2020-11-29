@@ -1,6 +1,6 @@
 # Hybrid TTS Changelog
-Version Code: **7454**    
-Version Name: **578563**
+Version Code: **824265**    
+Version Name: **6423443**
 
 
 > **Info**  
