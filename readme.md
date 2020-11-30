@@ -15,5 +15,5 @@ This is an Badge img (svg), it works with [badge•net][badge]
 ```
 See an demo [here][demo]
 
-[demo]: https://dergoogler.github.io/?tools/custom-markdown
+[demo]: https://dergoogler.github.io/?blog/custom-markdown
 [badge]: https://badge.net
