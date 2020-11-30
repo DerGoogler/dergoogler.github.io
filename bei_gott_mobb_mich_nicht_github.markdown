@@ -2,12 +2,17 @@
 Welcome to my website!
 
 ## 📱 Apps
-- [Bota64](/?apps/bota64)
-- [Hybrid TTS](/?apps/hybridtts)
+<div class="app-card-grid-container">
+<div class="app-card-grid-item">
+[app-card(Bota64)(Tools)(bota_512px.png)()]
+</div>
+<div class="app-card-grid-item">
+[app-card(Hybrid TTS)(Tools, Helps)(tts_512px.png)(/?apps/hybridtts)]
+</div>
+</div>
 
 ## 📒 Blog
 - [Termux PHP localhost](/?blog/termux-php-localhost)
-- [Custom Markdown](/?blog/custom-markdown)
 
 ## 🔐 Safty
 - [Impressum](/?safty/impressum)
