@@ -9,7 +9,7 @@ Welcome to my website!
 - [Termux PHP localhost](/?blog/termux-php-localhost)
 
 ## 🔐 Safty
-- [Impressum](/?safty/impressum.md)
+- [Impressum](/?safty/impressum)
 - [Hybrid TTS Privacy Policy](/?safty/hybridtts-privacy-policy)
 - [Bota64 App Privacy Policy](/?safty/bota64-privacy-policy)
 
