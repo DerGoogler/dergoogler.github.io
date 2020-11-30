@@ -23,7 +23,7 @@ if (param === "") {
     oReq.send();
 } else {
     oReq.addEventListener("load", reqListener);
-    oReq.open("GET", "/" + param, true);
+    oReq.open("GET", "/" + param + ".md", true);
     oReq.send();
 }
 
