@@ -16,6 +16,7 @@ Welcome to my website!
 
 ## 📒 Blog
 - [Termux PHP localhost](/?blog/termux-php-localhost)
+- [Getting started with PMR-Cloud](/?blog/start-with-pmr-cloud)
 
 ## 🔐 Safty
 - [Impressum](/?safty/impressum)
