@@ -13,5 +13,7 @@ This is an Badge img (svg), it works with [badge•net][badge]
 ```
 [badge(Made%20With%20❤️)(In%20VS%20Code%20&%20Github)(green)
 ```
+See an demo [here][demo]
 
+[demo]: https://dergoogler.github.io/?tools/custom-markdown
 [badge]: https://badge.net
