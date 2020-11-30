@@ -16,9 +16,8 @@ Some things cannot/could not be resolved yet
 - Share App
 
 ### Fixed
-- Android 11 don't speak bug
-- Imprint link
-- Privacy Policy link
+- [text-badge(Link has been changed!)(red)(Imprint link)]
+- [text-badge(Link has been changed!)(red)(Privacy Policy link)]
 
 ### Changed
 - "How to use"

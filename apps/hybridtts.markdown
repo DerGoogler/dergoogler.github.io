@@ -1,4 +1,4 @@
-# Hybrid TTS [badge(Build%20)(Android%20Studio)(green)]
+# Hybrid TTS [svg-badge(Build)(Android Studio)(272727)]
 The Easyst Hybrid TTS Tool!
 
 ## App Infos
@@ -23,9 +23,9 @@ It's in the source code because it's written in such a way that it can't even cr
 
 **Features**
 - [x] Speak
-- [ ] Pitch
-- [ ] Speed
-- [ ] Save as audio
+- [ ] [text-badge(Will Added Soon!)(green)(Pitch)]
+- [ ] [text-badge(Will Added Soon!)(green)(Speed)]
+- [ ] [text-badge(Planed)(red)(Save as audio)]
 
 And maybe different
 
