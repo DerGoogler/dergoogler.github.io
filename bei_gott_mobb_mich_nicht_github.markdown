@@ -10,7 +10,7 @@ Welcome to my website!
 [app-card(Hybrid TTS)(Tools, Helps)(tts_512px.png)(/?apps/hybridtts)]
 </div>
 <div class="app-card-grid-item">
-[text-badge(Promo | © SierraDevoplers)(dark)([app-card(Splash)(Social Networking)(splash_512px.png)(https://play.google.com/store/apps/details?id=com.proj.splash)])]
+[app-card(Splash)([text-badge(Promo | © SierraDevoplers)(dark)(Social Networking)])(splash_512px.png)(https://play.google.com/store/apps/details?id=com.proj.splash)]
 </div>
 </div>
 
