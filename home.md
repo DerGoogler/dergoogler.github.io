@@ -7,6 +7,7 @@ Welcome to my website!
 
 ## 📒 Blog
 - [Termux PHP localhost](/?blog/termux-php-localhost)
+- [Custom Markdown](/?blog/custom-markdown)
 
 ## 🔐 Safty
 - [Impressum](/?safty/impressum)
