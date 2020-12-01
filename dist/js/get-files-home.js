@@ -2,8 +2,8 @@ function reqListener() {
     function parseDLGM(dlgmText) {
         const dlg = dlgmText
             .replace(/\[fa-icon\((.*?)\)\]/gim, "<i class='fab fa-$1'></i>>")
-            .replace(/\[x\]/gim, "<input type='checkbox' id='coding' name='interest' value='coding' checked disabled>")
-            .replace(/\[ \]/gim, "<input type='checkbox' id='coding' name='interest' value='coding' disabled>")
+            .replace(/\[x\]/gim, "<i class='fa fa-check'>")
+            .replace(/\[ \]/gim, "<i class='fa fa-remove'>")
             .replace(/\[download\((.*?)\)\((.*?)\)\]/gim, "<a class='btn2' href='$2'>$1</a>")
             // [text-badge(Will Added Soon!)(green)(Pitch)]
             .replace(/\[text-badge\((.*?)\)\((.*?)\)\((.*?)\)\]/gim, "<span badge-text='$1' bg-color='$2'>$3</span>")
@@ -26,7 +26,6 @@ function reqListener() {
     var input = document.getElementById('content');
     input.innerHTML = parseDLGM(marked(this.responseText));
 }
-
 var oReq = new XMLHttpRequest();
 var param = getUrlParam('');
 if (param === "") {
@@ -41,7 +40,7 @@ if (param === "") {
 
 function getUrlParam(param) {
     param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-    var regex = new RegExp("[?]" + param + "([^&#]*)");
+    var regex = new RegExp("[?]" + param + "/([^&#]*)/");
     var url = decodeURIComponent(window.location.href);
     var match = regex.exec(url);
     return match ? match[1] : "";

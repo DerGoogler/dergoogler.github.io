@@ -10,7 +10,8 @@
 | Compile SDK Version | 30                                 |
 | Autostart           | com\.dergoogler\.tts\.MainActivity |
 | Permissions         | INTERNET, TTS\_SERVICE             |
-| Backupable          | false                              |
+| Backupable          | [ ]                                |
 | Developed With      | JAVA, XML, JS, HTML, CSS & JQUERY  |
+| Google Play         | [x]                                |
 
 <center>[download(Download)(https://play.google.com/store/apps/details?id=com.dergoogler.hybridtts)]</center>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>Tools - Der_Googler</title>
+    <title>PMR-Cloud - Der_Googler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link rel="stylesheet" type="text/css" href="/dist/css/md.css">
@@ -11,7 +11,7 @@
     <meta name="fragment" content="!">
     <link rel="shortcut icon" type="image/x-icon" href="/dist/images/google_512px.png" />
     <meta charset="UTF-8">
-    <script src="/dist/js/fgh.js"></script>
+    <script src="/dist/js/md-parser.js"></script>
     <script src="/pmr-cloud/md.js"></script>
 </head>
 <style>
@@ -42,11 +42,30 @@
             </div>
         </header>
     </div>
-    <center>
-        <h2 id="dg-author"></h2>
-    </center>
     <article class="markdown-body">
+        <div id="content"></div>
+    </article>
 
+    <article class="markdown-body">
+        <h1><b>Uploader Infos <svg width="133.3" height="20" viewBox="0 0 1333 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Build : PMR-Cloud"><g><rect fill="#555" width="413" height="200"></rect><rect fill="#272727" x="413" width="920" height="200"></rect></g><g aria-hidden="true" fill="#fff" text-anchor="start" font-family="Verdana,DejaVu Sans,sans-serif" font-size="110"><text x="60" y="148" textLength="313" fill="#000" opacity="0.1">Build</text><text x="50" y="138" textLength="313">Build</text><text x="468" y="148" textLength="820" fill="#000" opacity="0.1">PMR-Cloud</text><text x="458" y="138" textLength="820">PMR-Cloud</text></g></svg></b></h1>
+        <table>
+            <tr>
+                <td><b>Author</b></td>
+                <td id="pmr-author"></td>
+            </tr>
+            <tr>
+                <td><b>Decription</b></td>
+                <td id="pmr-description"></td>
+            </tr>
+            <tr>
+                <td><b>Page Title</b></td>
+                <td id="pmr-page-title"></td>
+            </tr>
+            <tr>
+                <td><b>Contact</b></td>
+                <td id="pmr-contact"></td>
+            </tr>
+        </table>
         <div id="content"></div>
     </article>
     <div class="footer">

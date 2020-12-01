@@ -8,7 +8,7 @@ Welcome to my website!
 [app-card(Bota64 [official])(Tools)([playstore] [android])(bota_512px.png)()]
 </div>
 <div class="app-card-grid-item">
-[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(/?apps/hybridtts)]
+[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(/?/apps/hybridtts/)]
 </div>
 </div>
 
@@ -20,13 +20,13 @@ Welcome to my website!
 </div>
 
 ## 📒 Blog
-- [Termux PHP localhost](/?blog/termux-php-localhost)
-- [Getting started with PMR-Cloud](/?blog/start-with-pmr-cloud)
+- [Termux PHP localhost](/?/blog/termux-php-localhost/)
+- [Getting started with PMR-Cloud](/?/blog/start-with-pmr-cloud/)
 
 ## 🔐 Safty
-- [[text-badge(Only in german)(blue)(Impressum)]](/?safty/impressum)
-- [Hybrid TTS Privacy Policy](/?safty/hybridtts-privacy-policy)
-- [Bota64 App Privacy Policy](/?safty/bota64-privacy-policy)
+- [[text-badge(Only in german)(blue)(Impressum)]](/?/safty/impressum/)
+- [Hybrid TTS Privacy Policy](/?/safty/hybridtts-privacy-policy/)
+- [Bota64 App Privacy Policy](/?/safty/bota64-privacy-policy/)
 
 ## 📂 Changelogs
-- [Hybrid TTS Ver-824265](/?changelogs/hybridtts-v824265)
+- [Hybrid TTS Ver-824265](/?/changelogs/hybridtts-v824265/)
