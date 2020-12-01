@@ -24,7 +24,7 @@ Welcome to my website!
 - [Getting started with PMR-Cloud](/?blog/start-with-pmr-cloud)
 
 ## 🔐 Safty
-- [Impressum](/?safty/impressum)
+- [[text-badge(Only in german)(blue)(Impressum)]](/?safty/impressum)
 - [Hybrid TTS Privacy Policy](/?safty/hybridtts-privacy-policy)
 - [Bota64 App Privacy Policy](/?safty/bota64-privacy-policy)
 
