@@ -11,7 +11,7 @@ This is an custom markdown download button
 ## Badge
 This is an Badge img (svg), it works with an locale svg
 
-[svg-badge(Made With ❤️)(In VS Code & Github)(272727)
+[svg-badge(Made With ❤️)(In VS Code & Github)(272727)]
 
 See an demo [here][demo]
 
