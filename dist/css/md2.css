@@ -21,109 +21,56 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-.btn {
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0.3rem;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+    min-height: 100vh;
 }
+
+.btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: none;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+
+/* Demo Stuff End -> */
+
+
+/* <- Magic Stuff Start */
 
 .btn:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3)
+    background-position: right center;
+    /* change the direction of the change here */
 }
 
-.btn+.btn {
-    margin-left: 1rem
-}
-
-@media screen and (min-width: 64em) {
-    .btn {
-        padding: 0.75rem 1rem
-    }
-}
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .btn {
-        padding: 0.6rem 0.9rem;
-        font-size: 0.9rem
-    }
-}
-
-@media screen and (max-width: 42em) {
-    .btn {
-        display: block;
-        width: 100%;
-        padding: 0.75rem;
-        font-size: 0.9rem
-    }
-    .btn+.btn {
-        margin-top: 1rem;
-        margin-left: 0
-    }
-}
-
-.btn2 {
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: rgba(0, 0, 0, 0.7);
-    background-color: rgba(0, 0, 0, 0.08);
-    border-color: rgba(0, 0, 0, 0.2);
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0.3rem;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s
-}
-
-.btn2:hover {
-    color: rgba(0, 0, 0, 0.8);
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-color: rgba(0, 0, 0, 0.3)
-}
-
-.btn2+.btn2 {
-    margin-left: 1rem
-}
-
-@media screen and (min-width: 64em) {
-    .btn2 {
-        padding: 0.75rem 1rem
-    }
-}
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .btn2 {
-        padding: 0.6rem 0.9rem;
-        font-size: 0.9rem
-    }
-}
-
-@media screen and (max-width: 42em) {
-    .btn2 {
-        display: block;
-        width: 100%;
-        padding: 0.75rem;
-        font-size: 0.9rem
-    }
-    .btn2+.btn2 {
-        margin-top: 1rem;
-        margin-left: 0
-    }
+.btn-1 {
+    background-image: linear-gradient(to right, #0098fc 0%, #0076fe 51%, #0098fc 100%);
 }
 
 .header-wrapper {
     background: #0076fe;
-    border-bottom: 1px solid #fff;
     background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0076fe", endColorstr="#0098fc", GradientType=1);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 0px;
 }
 
 .header {
@@ -137,7 +84,7 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 71px;
+    height: 70px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;

@@ -1,0 +1,10 @@
+<div class="header-wrapper">
+<header class="header">
+<div class="logo">
+<a href="/">
+<img style="border: 2px solid #fff; border-radius: 100px;" src="/dist/images/google_512px.png" width="30" height="30" alt="Der_Googler"> </a>
+<span><a title="Home" href="/"><span class="separator">|</span> Der_Googler Official</a></span>
+</div>
+</header>
+</div>
+<br>

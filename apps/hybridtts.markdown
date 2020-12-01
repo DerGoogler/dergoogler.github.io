@@ -1,4 +1,4 @@
-# Hybrid TTS [svg-badge(Build)(Android Studio)(272727)]
+# Hybrid TTS [svg-badge(Build)(Android ---------------------- Studio)(272727)]
 
 | App Name            | Hybrid TTS                         |
 |---------------------|------------------------------------|
