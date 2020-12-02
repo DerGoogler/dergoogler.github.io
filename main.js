@@ -1,4 +1,4 @@
-// helps
+/*// helps
 var doc = document;
 var conl = console;
 var dist = "/dist/dgo/";
@@ -35,4 +35,32 @@ oReq_footer.send();
 function reqListener_footer() {
     doc.getElementById('reqL_footer').innerHTML = this.responseText;
     conl.log('Footer Loaded!');
+}*/
+
+function includeDGO() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("dgo");
+        if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                    if (this.status == 404) { elmnt.innerHTML = "*.dgo file not found"; }
+                    /* Remove the attribute, and call this function once more: */
+                    elmnt.removeAttribute("DGO");
+                    includeDGO();
+                }
+            }
+            xhttp.open("GET", "/dist/dgo/" + file + ".dgo", true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+        }
+    }
 }
