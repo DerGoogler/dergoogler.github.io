@@ -5,6 +5,7 @@ function reqListener() {
             .replace(/\[x\]/gim, "<i class='fa fa-check'>")
             .replace(/\[ \]/gim, "<i class='fa fa-remove'>")
             .replace(/\[download\((.*?)\)\((.*?)\)\]/gim, "<button class='btn btn-1' onclick='window.open(\"$2\");'>$1</button>")
+            .replace(/\[title\((.*?)\)\]/gim, "<title id='md-title'>$1 - Der_Googler</title>")
             // [text-badge(Will Added Soon!)(green)(Pitch)]
             .replace(/\[text-badge\((.*?)\)\((.*?)\)\((.*?)\)\]/gim, "<span badge-text='$1' bg-color='$2'>$3</span>")
             // [svg-badge(Build)(Android Studio)(272727)]
@@ -108,3 +109,13 @@ var x = setInterval(function() {
         document.getElementById("dgo-event").innerHTML = "XMAS IS EXPIRED";
     }
 }, 1000);*/
+
+$(document).ready(function() {
+    $(document).bind('contextmenu', function(event) {
+        $("#contextmenu").css({ "top": event.pageY + "px", "left": event.pageX + "px" }).show();
+        event.preventDefault();
+    });
+    $(document).bind('click', function() {
+        $("#contextmenu").hide();
+    })
+});

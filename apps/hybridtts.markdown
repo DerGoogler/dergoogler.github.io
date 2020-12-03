@@ -1,4 +1,4 @@
-<title id="md-title">Hybrid TTS - Der_Googler</title>
+[title(Hybrid TTS)]
 
 # Hybrid TTS
 

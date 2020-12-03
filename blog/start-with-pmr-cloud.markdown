@@ -1,6 +1,4 @@
-<script>
-document.title = "HEHEHEH";
-</script>
+[title(Start with PMR-Cloud)]
 
 # PMR-Cloud
 getting started with PMR-Cloud

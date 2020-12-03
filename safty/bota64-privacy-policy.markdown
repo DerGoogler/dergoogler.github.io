@@ -1,3 +1,5 @@
+[title(Bota64 App Privacy Policy)]
+
 **Privacy Policy**
 
 Der_Googler built the Bota64 app as a Free app. This SERVICE is provided by Der_Googler at no cost and is intended for use as is.

@@ -1,3 +1,5 @@
+[title(Impressum)]
+
 # Impressum
 
 ## Verantwortlich für den Inhalt nach § 55

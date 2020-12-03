@@ -1,3 +1,5 @@
+[title(Hybrid TTS Privacy Policy)]
+
 **Privacy Policy**
 
 Der_Googler built the Hybrid TTS app as a Free app. This SERVICE is provided by Der_Googler at no cost and is intended for use as is.

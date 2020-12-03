@@ -2,25 +2,31 @@
 <html lang="en-US">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="fragment" content="!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" type="text/css" href="/dist/fw/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/md.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/md2.css">
+    <link rel="stylesheet" type="text/css" href="/dist/css/md3.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/dist/images/google_512px.png" />
     <title>Home - Der_Googler</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/dist/js/get-files-home.js"></script>
     <script src="/dist/js/md-parser.js"></script>
     <script src="main.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="shortcut icon" type="image/x-icon" href="/dist/images/google_512px.png" />
     <meta dgo="css"></meta>
 </head>
 
 <body>
-    <div dgo="header"></div>
-    <article class="markdown-body">
-        <div id="content"></div>
-    </article>
-    <div dgo="footer"></div>
+    <div id="md-cnt"></div>
+    <script>
+        // better perf
+        document.getElementById('md-cnt').innerHTML = `<div dgo="header"></div><article class="markdown-body"><div id="content"></div></article><div dgo="footer"></div><div dgo="others"></div>`;
+    </script>
     <script>
         includeDGO();
     </script>
