@@ -1,7 +1,8 @@
-# Welcome
+# Welcome [xmas]
+<div id='dgo-event'></div>
 Welcome to my website!
 
-## 📱 Apps
+## [app] Apps
 ### Official
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
@@ -19,14 +20,14 @@ Welcome to my website!
 </div>
 </div>
 
-## 📒 Blog
+## [blog] Blog
 - [Termux PHP localhost](/?/blog/termux-php-localhost/)
 - [Getting started with PMR-Cloud](/?/blog/start-with-pmr-cloud/)
 
-## 🔐 Safty
+## [safty] Safty
 - [[text-badge(Only in german)(blue)(Impressum)]](/?/safty/impressum/)
 - [Hybrid TTS Privacy Policy](/?/safty/hybridtts-privacy-policy/)
 - [Bota64 App Privacy Policy](/?/safty/bota64-privacy-policy/)
 
-## 📂 Changelogs
+## [changelog] Changelogs
 - [Hybrid TTS Ver-824265](/?/changelogs/hybridtts-v824265/)
