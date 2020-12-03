@@ -1,4 +1,6 @@
-# Hybrid TTS [svg-badge(Build)(Android ---------------------- Studio)(272727)]
+<title id="md-title">Hybrid TTS - Der_Googler</title>
+
+# Hybrid TTS
 
 | App Name            | Hybrid TTS                         |
 |---------------------|------------------------------------|

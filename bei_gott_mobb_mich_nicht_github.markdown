@@ -1,15 +1,11 @@
-# Welcome [xmas]
-<div id='dgo-event'></div>
-Welcome to my website!
-
-## [app] Apps
+# [app] Apps
 ### Official
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
 [app-card(Bota64 [official])(Tools)([playstore] [android])(bota_512px.png)()]
 </div>
 <div class="app-card-grid-item">
-[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(/?/apps/hybridtts/)]
+[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(/?/apps/&/hybridtts/)]
 </div>
 </div>
 
@@ -20,14 +16,29 @@ Welcome to my website!
 </div>
 </div>
 
-## [blog] Blog
-- [Termux PHP localhost](/?/blog/termux-php-localhost/)
-- [Getting started with PMR-Cloud](/?/blog/start-with-pmr-cloud/)
+# [blog] Blog
+<div class="app-card-grid-container">
+<div class="app-card-grid-item">
+[card(PHP localhost)(Helps)(Termux)(/?/blog/&/termux-php-localhost/)]
+</div>
+<div class="app-card-grid-item">
+[card(Start with PMR-Cloud)(Helps)(PMR-Cloud [official])(/?/blog/&/start-with-pmr-cloud/)]
+</div>
+</div>
 
-## [safty] Safty
-- [[text-badge(Only in german)(blue)(Impressum)]](/?/safty/impressum/)
-- [Hybrid TTS Privacy Policy](/?/safty/hybridtts-privacy-policy/)
-- [Bota64 App Privacy Policy](/?/safty/bota64-privacy-policy/)
+# [safty] Safty
+<div class="app-card-grid-container">
+<div class="app-card-grid-item">
+[card(Hybrid TTS PP)(Privacy Policy)(Hybrid TTS)(/?/safty/&/hybridtts-privacy-policy/)]
+</div>
+<div class="app-card-grid-item">
+[card(Bota64 App PP)(Privacy Policy)(Bota64 App)(/?/safty/&/bota64-privacy-policy/)]
+</div>
+</div>
 
-## [changelog] Changelogs
-- [Hybrid TTS Ver-824265](/?/changelogs/hybridtts-v824265/)
+# [changelog] Changelogs
+<div class="app-card-grid-container">
+<div class="app-card-grid-item">
+[card(Hybrid TTS)(Changelog)(Ver-824265)(/?/changelogs/&/hybridtts-v824265/)]
+</div>
+</div>

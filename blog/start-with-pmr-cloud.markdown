@@ -1,6 +1,8 @@
-[title(PMR-Cloud Start)]
+<script>
+document.title = "HEHEHEH";
+</script>
 
-# PMR-Cloud [svg-badge(Build)(PMR-Cloud)(272727)]
+# PMR-Cloud
 getting started with PMR-Cloud
 
 ## Setup
