@@ -1,11 +1,6 @@
 [title(Home)]
 
 # XMAS! [xmas]
-
-[g]
-(ghhltg h)
-[g]
-
  Click [alert(Hello[sp]World!)(here)] to see our new markdown alert dialog
 
 # [app] Apps

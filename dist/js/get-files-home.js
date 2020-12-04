@@ -17,7 +17,7 @@ function reqListener() {
             .replace(/\[card\((.*?)\)\((.*?)\)\((.*?)\)\((.*?)\)\]/gim, "<div class='app-card'><div class='app-card-container'><h4><b><a href='$4'>$1</a></b></h4><p>$2</p><p><em>$3</em></p></div></div>")
             // fas
             .replace(/\[playstore\]/gim, "<i class='fab fa-google-play'></i>")
-            .replace(/\[official\]/gim, "<i class='fal fa-certificate'></i>")
+            .replace(/\[official\]/gim, "<i class='fal fa-badge-check'></i>")
             .replace(/\[promo\]/gim, "<i class='fal fa-ad'></i>")
             .replace(/\[web\]/gim, "<i class='fad fa-globe-americas'></i>")
             .replace(/\[android\]/gim, "<i class='fab fa-android'></i>")
@@ -106,7 +106,7 @@ $(document).ready(function() {
 });
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+var countDownDate = new Date("Dec 24, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

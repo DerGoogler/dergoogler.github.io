@@ -30,3 +30,66 @@
 .markdown-alert:active {
   background-color: #5195e7;
 }
+/* Slideshow container */
+/* Slides */
+/* The dot/bullet/indicator container */
+/* The dots/bullets/indicators */
+/* Add a background color to the active dot/circle */
+/* Add an italic font style to all quotes */
+/* Add a blue color to the author */
+.slideshow-container {
+  background: #0076fe;
+  background: linear-gradient(119.42deg, #0076fe, #0098fc 49.56%);
+  font-style: italic;
+  color: #f1f1f1;
+}
+.slideshow-container em {
+  font-style: italic;
+  color: #f1f1f1;
+}
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+.dot-container {
+  background: #0076fe;
+  background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
+  text-align: center;
+  padding: 20px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot:hover {
+  background-color: #adadad;
+}
+.active {
+  background-color: #adadad;
+}
+.author {
+  color: #8dc1e4;
+}
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
