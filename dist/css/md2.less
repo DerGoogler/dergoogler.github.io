@@ -1,10 +1,16 @@
-/* Demo Stuff End -> */
-
-
-/* <- Magic Stuff Start */
-
 &::-webkit-scrollbar {
-    display: none;
+	width: 10px;
+}
+&::-webkit-scrollbar-track {
+	border-radius: 0px;
+}
+&::-webkit-scrollbar-thumb {
+	background: transparent;
+    border-radius: 100px;
+    border: 2px solid gray;
+	&:hover {
+		background: #b30000;
+	}
 }
 
 body {
@@ -62,11 +68,13 @@ html {
 .header-wrapper {
     background: #0076fe;
     background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
-    position: fixed;
+    width: 100%;
+    /*
     top: 0px;
     left: 0px;
     right: 0px;
     margin-top: 0px;
+    */
     .search-wrapper {
         display: none;
     }

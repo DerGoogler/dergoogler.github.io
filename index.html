@@ -28,6 +28,77 @@
                 padding: 0px;
             }
         }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            background: #0076fe;
+            background: linear-gradient(119.42deg, #0076fe, #0098fc 49.56%);
+        }
+        /* Slides */
+        
+        .mySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+        }
+        /* The dot/bullet/indicator container */
+        
+        .dot-container {
+            background: #0076fe;
+            background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
+            text-align: center;
+            padding: 20px;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        /* Add a background color to the active dot/circle */
+        
+        .active,
+        .dot:hover {
+            background-color: #adadad;
+        }
+        /* Add an italic font style to all quotes */
+        
+        .slideshow-container,
+        em {
+            font-style: italic;
+            color: #f1f1f1;
+        }
+        /* Add a blue color to the author */
+        
+        .author {
+            color: #8dc1e4;
+        }
+        
+        .top-container {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .content {
+            padding: 16px;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        .sticky+.content {
+            padding-top: 102px;
+        }
     </style>
     <title>Home - Der_Googler</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -36,7 +107,23 @@
     <script src="/dist/js/md-parser.js"></script>
 </head>
 
-<body>
+<body style="padding-left:490px;padding-right:490px;">
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <em id="dgo-event"></em>
+            <p class="author"><i class="fal fa-gifts"></i></p>
+        </div>
+
+        <div class="mySlides">
+            <em>Thanks for all!</em>
+            <p class="author">Der_Googler</p>
+        </div>
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
     <div id="web-header" class="header-wrapper">
         <header class="header">
             <div class="logo">
@@ -49,13 +136,43 @@
         </header>
     </div>
 
-    <article id="web-body" class="markdown-body">
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <article id="web-body" class="markdown-body content">
         <div id="content"></div>
     </article>
-    <div dgo="footer"></div>
-    <div dgo="others"></div>
 
-    <!-- Context -->
     <div id="contextmenu">
         <p><b>You don't need this trash menu :)</b><br>Enjoy!</p>
     </div>
@@ -71,6 +188,7 @@
             </section>
         </div>
     </div>
+
 </body>
 
 </html>

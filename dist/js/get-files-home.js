@@ -1,6 +1,7 @@
 function reqListener() {
     function parseDLGM(dlgmText) {
         const dlg = dlgmText
+            //.replace(/[^\n]/gim, "")
             .replace(/\[fa-icon\((.*?)\)\]/gim, "<i class='fab fa-$1'></i>>")
             .replace(/\[x\]/gim, "<i class='fa fa-check'>")
             .replace(/\[ \]/gim, "<i class='fa fa-remove'>")
@@ -32,11 +33,14 @@ function reqListener() {
             //
             .replace(/\[sp\]/gim, " ")
             .replace(/\[alert\((.*?)\)\((.*?)\)\]/gim, "<em class='markdown-alert' onclick='alert(\"$1\");' title='$2'>$2</em>")
+            .replace(/\[g\]\n\((.*)\)\n\[g\]/gim, '<em>$1</em>')
+            /*
+            .replace(/\[!head\]/gim, "<template>")
 
+            */
         return dlg.trim()
     }
     var input = document.getElementById('content');
-
     input.innerHTML = parseDLGM(marked(this.responseText));
     var text = document.getElementById('md-title').textContent;
     document.title = text;
@@ -100,6 +104,35 @@ $(document).ready(function() {
         $("#contextmenu").hide();
     })
 });
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="demo"
+    document.getElementById("dgo-event").innerHTML = "<b>" + "XMAS IN:" + "</b> " + days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("dgo-event").innerHTML = "XMAS IS EXPIRED";
+    }
+}, 1000);
 
 /*
 function includeDGO() {
