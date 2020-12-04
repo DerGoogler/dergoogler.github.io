@@ -2,6 +2,8 @@
 
 # XMAS! [xmas]
 
+ Click [alert(Hello[sp]World!)(here)] to see our new markdown alert dialog
+
 # [app] Apps
 ### [official] Official
 <div class="app-card-grid-container">
