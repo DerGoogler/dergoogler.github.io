@@ -7,7 +7,7 @@
 [app-card(Bota64 [official])(Tools)([playstore] [android])(bota_512px.png)()]
 </div>
 <div class="app-card-grid-item">
-[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(/?/apps/&/hybridtts/)]
+[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(/?/apps/#/hybridtts/)]
 </div>
 </div>
 
@@ -21,26 +21,26 @@
 # [blog] Blog
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
-[card(PHP localhost)(Helps)(Termux)(/?/blog/&/termux-php-localhost/)]
+[card(PHP localhost)(Helps)(Termux)(/?/blog/#/termux-php-localhost/)]
 </div>
 <div class="app-card-grid-item">
-[card(Start with PMR-Cloud)(Helps)(PMR-Cloud [official])(/?/blog/&/start-with-pmr-cloud/)]
+[card(Start with PMR-Cloud)(Helps)(PMR-Cloud [official])(/?/blog/#/start-with-pmr-cloud/)]
 </div>
 </div>
 
 # [safty] Safty
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
-[card(Hybrid TTS PP)(Privacy Policy)(Hybrid TTS)(/?/safty/&/hybridtts-privacy-policy/)]
+[card(Hybrid TTS PP)(Privacy Policy)(Hybrid TTS)(/?/safty/#/hybridtts-privacy-policy/)]
 </div>
 <div class="app-card-grid-item">
-[card(Bota64 App PP)(Privacy Policy)(Bota64 App)(/?/safty/&/bota64-privacy-policy/)]
+[card(Bota64 App PP)(Privacy Policy)(Bota64 App)(/?/safty/#/bota64-privacy-policy/)]
 </div>
 </div>
 
 # [changelog] Changelogs
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
-[card(Hybrid TTS)(Changelog)(Ver-824265)(/?/changelogs/&/hybridtts-v824265/)]
+[card(Hybrid TTS)(Changelog)(Ver-824265)(/?/changelogs/#/hybridtts-v824265/)]
 </div>
 </div>
