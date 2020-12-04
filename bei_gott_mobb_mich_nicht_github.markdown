@@ -1,7 +1,9 @@
 [title(Home)]
 
+# XMAS! [xmas]
+
 # [app] Apps
-### Official
+### [official] Official
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
 [app-card(Bota64 [official])(Tools)([playstore] [android])(bota_512px.png)()]
@@ -11,7 +13,7 @@
 </div>
 </div>
 
-### Promo
+### [promo] Promo
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
 [app-card(Splash [promo])(Social Networking)([playstore] [android])(splash_512px.png)(https://play.google.com/store/apps/details?id=com.proj.splash)]
@@ -38,9 +40,21 @@
 </div>
 </div>
 
-# [changelog] Changelogs
+# [others] Ohters
+others lol
+### [changelog] Changelogs
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
 [card(Hybrid TTS)(Changelog)(Ver-824265)(/?/changelogs/#/hybridtts-v824265/)]
+</div>
+</div>
+
+### [team] Team
+<div class="app-card-grid-container">
+<div class="app-card-grid-item">
+[app-card(Der_Googler)(Admin)()(google_512px.jpg)()]
+</div>
+<div class="app-card-grid-item">
+[app-card(Doubt™ | Starlte)(Mod in TG Group)()(doubt.jpg)()]
 </div>
 </div>
