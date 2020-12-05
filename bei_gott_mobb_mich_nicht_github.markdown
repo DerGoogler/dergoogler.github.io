@@ -1,4 +1,6 @@
 [title(Home)]
+[heads(false)]
+[webpage(false)]
 
 # XMAS! [xmas]
  Click [alert(Hello[sp]World!)(here)] to see our new markdown alert dialog
