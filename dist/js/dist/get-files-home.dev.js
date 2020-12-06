@@ -48,7 +48,7 @@ if (param === "blog") {
 
 if (param === "") {
   xmlhttpp.addEventListener("load", reqListener);
-  xmlhttpp.open("GET", "bei_gott_mobb_mich_nicht_github.markdown", true);
+  xmlhttpp.open("GET", "/main/index.markdown", true);
   xmlhttpp.send();
 } else {
   xmlhttpp.addEventListener("load", reqListener);

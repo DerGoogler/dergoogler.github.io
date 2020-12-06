@@ -1,9 +1,3 @@
-# Index
-- [README](main/readme.markdown)
-- [LICENCE](main/licence.markdown)
-- [SECURITY](main/security.markdown)
-
-## Licence
 ```
 MIT License
 

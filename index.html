@@ -37,66 +37,28 @@
 </head>
 
 <body>
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <em id="dgo-event"></em>
-            <p class="author"><i class="fal fa-gifts"></i></p>
-        </div>
 
-        <div class="mySlides">
-            <em>Thanks for all!</em>
-            <p class="author">Der_Googler</p>
-        </div>
-    </div>
-    <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
-
-    <div id="web-header" class="header-wrapper">
-        <header class="header">
-            <div class="logo">
-                <a href="/">
-                    <img style="border: 2px solid #fff; border-radius: 100px;" src="/dist/images/google_512px.jpg" width="30" height="30" alt="Der_Googler"> </a>
-                <span><a title="Home" href="/"><span class="separator">|</span> Der_Googler Official</a>
-                </span>
-
+    <div class="news-wrapper">
+        <header class="news">
+            <div class="news-content">
+                <center><em id="dgo-event"></em></center>
             </div>
         </header>
     </div>
 
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+    <div id="web-header" class="header-wrapper">
+        <header class="header">
+            <div class="head-content">
+                <a href="/">
+                    <img class="header-logo" src="/dist/images/google_512px.jpg" alt="Der_Googler">&nbsp;&nbsp;&nbsp;Der_Googler Official</a>
+            </div>
+            <div class="head-right-cnt">
+                <button class="head-button">Imprint</button>
+            </div>
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+        </header>
+    </div>
 
     <article id="web-body" class="markdown-body content">
         <div id="content"></div>
