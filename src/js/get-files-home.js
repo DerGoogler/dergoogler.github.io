@@ -52,6 +52,7 @@ $(document).ready(function() {
                             .replace(/\[team\]/gim, "<i class='fal fa-user-friends'></i>")
                             // tests
                             .replace(/\<\!\-\-(.+)\-\-\>/gim, '$1')
+                            .replace(/[\/]{3}(.+)/g, '<!--§1-->')
 
                         return dlg.trim()
                     }
