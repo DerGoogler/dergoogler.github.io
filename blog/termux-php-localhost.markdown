@@ -1,6 +1,6 @@
 [title(Termux PHP local Host)]
 
-# Setup an Termux PHP localhost <img src="https://badgen.net/badge/Build%20/Termux/green">
+# Setup an Termux PHP localhost [svg-badge(Build)(Termux)]
 What you need:  
 [Termux][termux] and a phone xD
 

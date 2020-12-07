@@ -1,27 +1,70 @@
 &::-webkit-scrollbar {
-    width: 10px;
+	width: 5px;
 }
-
 &::-webkit-scrollbar-track {
-    border-radius: 0px;
+    box-shadow: inset 0 0 4px grey;
+    background-image: linear-gradient(to bottom, #fcba07 0%, #ecd507 51%, #fcba07 100%);
+	border-radius: 0px;
 }
-
 &::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 100px;
-    border: 2px solid gray;
-
-    &:hover {
-        background: #b30000;
-    }
+	background: rgba(0, 0, 0, 0.452);
+	border-radius: 0px;
+	&:hover {
+		background: rgba(0, 0, 0, 0.507);
+	}
 }
 
 body {
-    padding: 0;
+    padding: 0px;
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
     color: #606c71;
+    background-image: linear-gradient(to right, #0098fc 0%, #0076fe 51%, #0098fc 100%);
+}
+
+.page-content {
+    margin-left: 490px;
+    margin-right: 490px;
+    background-color: white;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
+}
+
+@media (max-width: 1440px) {
+    .page-content {
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: white;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+    }
+}
+
+@media (max-width: 767px) {
+    .page-content {
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: white;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+    }
 }
 
 a {
@@ -34,18 +77,6 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
-/*
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 80vw;
-    margin: 0 auto;
-    min-height: 100vh;
-}*/
 
 .btn {
     flex: 1 1 auto;
@@ -71,7 +102,8 @@ html {
 
 .header-wrapper {
     background: #0076fe;
-    background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
+    background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
 
     .header {
@@ -100,10 +132,13 @@ html {
             display: flex;
 
             a {
-                color: white;
+                color: #0098fc;
                 position: relative;
                 -webkit-box-align: center;
                 -ms-flex-align: center;
+                background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 align-items: center;
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -128,18 +163,18 @@ html {
                 align-items: flex-start;
                 cursor: default;
                 outline: none;
-                border: 1px solid white;
+                border: none;
+                transition: 0.5s;
+                background-image: linear-gradient(to right, #0098fc 0%, #0076fe 51%, #0098fc 100%);
                 border-radius: 100px;
                 color: white;
-                background-color: transparent;
                 display: inline-block;
                 height: 25px;
                 width: 100px;
                 font-size: 15px;
 
                 &:hover {
-                    color: rgb(94, 190, 162);
-                    border: 1px solid rgb(94, 190, 162);
+                    background-position: right center;
                 }
             }
         }
@@ -180,23 +215,24 @@ html {
     }
 }
 
-
-
-
 .footer {
-    background: #0076fe;
-    background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
+    background: white;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 25px 0;
     position: relative;
 
     a {
-        color: #FFFFFF;
+        background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     p {
-        color: #FFFFFF;
+        background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 }
@@ -223,49 +259,12 @@ html {
         margin-right: 25px;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
-
-    .footer-book-demo {
-        p {
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 19px;
-            align-items: center;
-            text-align: center;
-            display: inline;
-            margin-right: 25px;
-            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-        a {
-            background: #0076fe;
-            mix-blend-mode: normal;
-            border-radius: 3px;
-            padding: 10px 25px;
-            text-decoration: none;
-            font-family: 'Open Sans';
-            text-transform: uppercase;
-            font-weight: bold;
-            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-    }
 }
 
 p.copyright {
     text-align: center;
     margin: 25px 0 10px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.footer-language-selector {
-    color: #7e7e7e;
-    display: inline-block;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    span.dropdown-menu[aria-expanded=true] {
-        bottom: 30px;
-    }
 }
 
 [bg-color="gray"] {
@@ -389,45 +388,6 @@ p.copyright {
     }
 }
 
-@media (min-width: 768px) {
-    .sdg-button {
-        display: inline-block;
-        padding: 5px 15px;
-        min-height: 30px;
-        border-radius: 3px;
-        background-color: #0076fe;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
-        margin-right: 8px;
-    }
-
-    [dir="rtl"] {
-        .nav-wrapper {
-            .user-nav {
-                a {
-                    margin: 0 0 0 px;
-                }
-            }
-        }
-    }
-
-    .nav-wrapper {
-        .icon-menu {
-            display: none;
-        }
-    }
-}
-
-@media (min-width: 580px) {
-    .nav-wrapper {
-        .mini-search {
-            display: none;
-        }
-    }
-}
-
 @media (min-width: 992px) {
     .footer-inner {
         -webkit-box-pack: justify;
@@ -448,5 +408,47 @@ p.copyright {
 
     p.copyright {
         margin: 10px 0;
+    }
+}
+
+.badge-wrapper {
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    outline: none;
+    border: none;
+    border-radius: none;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+
+    .badge-text-one {
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        outline: none;
+        border: none;
+        border-radius: 8px 0px 0px 8px;
+        color: #fff;
+        background: linear-gradient(#646464, #4c4c4c);
+        display: inline-block;
+        font-size: 12px;
+        padding: 5px;
+        vertical-align: middle;
+    }
+
+    .badge-text-two {
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        outline: none;
+        border: none;
+        background: linear-gradient(#45cf27, #2db70f);
+        border-radius: 0px 8px 8px 0px;
+        color: #fff;
+        display: inline-block;
+        font-size: 12px;
+        padding: 5px;
+        vertical-align: middle;
     }
 }

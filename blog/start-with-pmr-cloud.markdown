@@ -1,6 +1,6 @@
 [title(Start with PMR-Cloud)]
 
-# PMR-Cloud
+# PMR-Cloud [svg-badge(Build)(PMR-Cloud)]
 getting started with PMR-Cloud
 
 ## Setup
