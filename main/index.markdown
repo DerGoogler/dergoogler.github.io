@@ -37,6 +37,10 @@
 
 # <!--[safty]--> Safty
 <div class="app-card-grid-container">
+
+<div class="app-card-grid-item">
+<!--[card(Github Stats App PP)(Privacy Policy)(Github Stats App)(/?/safty/#/github-stats-privacy-policy/)]-->
+</div>
 <div class="app-card-grid-item">
 <!--[card(Hybrid TTS PP)(Privacy Policy)(Hybrid TTS)(/?/safty/#/hybridtts-privacy-policy/)]-->
 </div>
