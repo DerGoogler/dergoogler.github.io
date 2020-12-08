@@ -33,6 +33,9 @@
 <div class="app-card-grid-item">
 <!--[card(Start with PMR-Cloud)(Helps)(PMR-Cloud [official])(/?/blog/#/start-with-pmr-cloud/)]-->
 </div>
+<div class="app-card-grid-item">
+<!--[card(Componets)(Samples)(Der_Googler [official])(/?/blog/#/componets/)]-->
+</div>
 </div>
 
 # <!--[safty]--> Safty
