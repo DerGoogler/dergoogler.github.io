@@ -11,10 +11,16 @@
 ### <!--[official]--> Official
 <div class="app-card-grid-container">
 <div class="app-card-grid-item">
-<!--[app-card(Bota64 [official])(Tools)([playstore] [android])(bota_512px.png)()]-->
+<!--[app-card(GitHub Stats [official])(Tools, Helps)([playstore] [android])(github_stats_512px.png)(https://play.google.com/store/apps/details?id=com.dergoogler.githubstats)]-->
 </div>
 <div class="app-card-grid-item">
-<!--[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(/?/apps/#/hybridtts/)]-->
+<!--[app-card(AES Encoder [official])(Tools)([playstore] [android])(aes_512px.png)(https://play.google.com/store/apps/details?id=com.dergoogler.aes)]-->
+</div>
+<div class="app-card-grid-item">
+<!--[app-card(Bota64 [official])(Tools)([playstore] [android])(bota_512px.png)(https://play.google.com/store/apps/details?id=com.dergoogler.bota64)]-->
+</div>
+<div class="app-card-grid-item">
+<!--[app-card(Hybrid TTS [official])(Tools, Helps)([playstore] [android])(tts_512px.png)(https://play.google.com/store/apps/details?id=com.dergoogler.hybridtts)]-->
 </div>
 </div>
 
@@ -40,7 +46,9 @@
 
 # <!--[safty]--> Safty
 <div class="app-card-grid-container">
-
+<div class="app-card-grid-item">
+<!--[card(AES App PP)(Privacy Policy)(AES App)(/?/safty/#/aes-privacy-policy/)]-->
+</div>
 <div class="app-card-grid-item">
 <!--[card(Github Stats App PP)(Privacy Policy)(Github Stats App)(/?/safty/#/github-stats-privacy-policy/)]-->
 </div>
