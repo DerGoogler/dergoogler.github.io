@@ -1,7 +1,19 @@
 # Componets
-here can you see all custom markdown componets
+here can you see all custom markdown componets    
+View [LICENCE](https://dergoogler.github.io/?/safty/#/mit-licence/)
 <br>
 <br>
+
+----
+## Alert
+**Example**      
+ Click <!--[alert(Hello[sp]World!)(here)]--> to see our new markdown alert dialog
+
+**Code**
+```
+ Click <!--[alert(Hello[sp]World!)(here)???]--> to see our new markdown alert dialog
+```
+----
 
 ----
 ## SVG Badge
@@ -16,7 +28,7 @@ here can you see all custom markdown componets
 
 ----
 ## Text Badge
-**Example**
+**Example**     
 [text-badge(Link has been changed!)(red)(Imprint link)]
 
 **Code**
