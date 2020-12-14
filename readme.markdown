@@ -1,4 +1,4 @@
 # Index
-- [README](master/readme.markdown)
+- [README](main/readme.markdown)
 - [LICENCE](https://dergoogler.github.io/?/safty/#/mit-licence/)
-- [SECURITY](master/security.markdown)
+- [SECURITY](main/security.markdown)

@@ -92,3 +92,18 @@ See the title from the page
 <!--[title(Componets)???]-->
 ```
 ----
+
+----
+## Custom page
+**Example**     
+it will remove the header (navbar from this page) and you can diable the margin
+
+**Code**
+```
+[header(false)???] <-- Removes the header
+[webpage(true)???] <-- Removes the margin
+[evens(false)???] <-- Removes the events header
+```    
+This can be useful by the [PMR-Cloud](https://dergoogler.github.io/?/blog/#/start-with-pmr-cloud/)
+
+----

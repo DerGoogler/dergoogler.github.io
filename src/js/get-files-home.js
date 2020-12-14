@@ -23,7 +23,8 @@ $(document).ready(function() {
                             .replace(/\[ \]/gim, "<i class='fa fa-remove'>")
                             .replace(/\[download\((.*?)\)\((.*?)\)\]/gim, "<button class='btn btn-1' onclick='window.open(\"$2\");'>$1</button>")
                             .replace(/\[title\((.*?)\)\]/gim, "<title id='md-title'>$1 - Der_Googler</title>")
-                            .replace(/\[heads\((.*?)\)\]/gim, "<title id='hide-nav'>$1</title>")
+                            .replace(/\[header\((.*?)\)\]/gim, "<title id='hide-nav'>$1</title>")
+                            .replace(/\[evens\((.*?)\)\]/gim, "<title id='hide-events'>$1</title>")
                             .replace(/\[webpage\((.*?)\)\]/gim, "<title id='hide-page'>$1</title>")
                             .replace(/\[sp\]/gim, " ")
                             .replace(/\[alert\((.*?)\)\((.*?)\)\]/gim, "<em class='markdown-alert' onclick='alert(\"$1\");' title='$2'>$2</em>")
@@ -62,64 +63,25 @@ $(document).ready(function() {
                     document.title = text;
                     var hideNAV = document.getElementById('hide-nav').textContent;
                     var hideNAV2 = document.getElementById('hide-page').textContent;
-                    if (hideNAV === "true") {
+                    var hideNAV3 = document.getElementById('hide-events').textContent;
+                    if (hideNAV === "false") {
                         document.getElementById('web-header').style.display = 'none';
                         document.getElementById('web-footer').style.display = 'none';
                     }
                     if (hideNAV2 === "true") {
-                        document.getElementById('web-body').style.cssText = "box-sizing: border-box;min-width: 100%;max-width: 100%;margin: 0px;margin-top: 0px;padding: 0px;";
+                        document.getElementById('web-body').style.cssText = "box-sizing: border-box;min-width: 100%;max-width: 100%;margin: 0px;margin-top: 0px;padding: 16px 32px 32px 32px;";
                     }
-                    //Make the DIV element draggagle:
-                    dragElement(document.getElementById("mydiv"));
-
-                    function dragElement(elmnt) {
-                        var pos1 = 0,
-                            pos2 = 0,
-                            pos3 = 0,
-                            pos4 = 0;
-                        if (document.getElementById(elmnt.id + "header")) {
-                            /* if present, the header is where you move the DIV from:*/
-                            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-                        } else {
-                            /* otherwise, move the DIV from anywhere inside the DIV:*/
-                            elmnt.onmousedown = dragMouseDown;
-                        }
-
-                        function dragMouseDown(e) {
-                            e = e || window.event;
-                            e.preventDefault();
-                            // get the mouse cursor position at startup:
-                            pos3 = e.clientX;
-                            pos4 = e.clientY;
-                            document.onmouseup = closeDragElement;
-                            // call a function whenever the cursor moves:
-                            document.onmousemove = elementDrag;
-                        }
-
-                        function elementDrag(e) {
-                            e = e || window.event;
-                            e.preventDefault();
-                            // calculate the new cursor position:
-                            pos1 = pos3 - e.clientX;
-                            pos2 = pos4 - e.clientY;
-                            pos3 = e.clientX;
-                            pos4 = e.clientY;
-                            // set the element's new position:
-                            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-                            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-                        }
-
-                        function closeDragElement() {
-                            /* stop moving when mouse button is released:*/
-                            document.onmouseup = null;
-                            document.onmousemove = null;
-                        }
+                    if (hideNAV3 === "false") {
+                        document.getElementById('web-news').style.display = 'none';
                     }
                 }
 
                 var xmlhttpp = new XMLHttpRequest();
+                var xmlhttpp_pmr = new XMLHttpRequest();
                 var param = getUrlParam('');
                 var param2 = getUrlParam2('');
+                var param_pmr = getUrlParam_pmr('');
+                var param2_pmr = getUrlParam2_pmr('');
 
                 if (param === "blog") {
                     document.title = "Blog - Der_Googler";
@@ -129,16 +91,30 @@ $(document).ready(function() {
                     document.title = "Safty - Der_Googler";
                 } else if (param === "changelogs") {
                     document.title = "Changelogs - Der_Googler";
+                } else if (param === "pmr") {
+                    document.title = "PMR-Cloud - Der_Googler";
                 }
 
-                if (param === "") {
-                    xmlhttpp.addEventListener("load", reqListener);
-                    xmlhttpp.open("GET", "/main/index.markdown", true);
-                    xmlhttpp.send();
+                if (param_pmr === "pmr") {
+                    if (param_pmr === "" || param2_pmr === ("")) {
+                        xmlhttpp_pmr.addEventListener("load", reqListener);
+                        xmlhttpp_pmr.open("GET", "/main/index.markdown", true);
+                        xmlhttpp_pmr.send();
+                    } else {
+                        xmlhttpp_pmr.addEventListener("load", reqListener);
+                        xmlhttpp_pmr.open("GET", "https://gist.githubusercontent.com/" + param2_pmr + ".dgsm", true);
+                        xmlhttpp_pmr.send();
+                    }
                 } else {
-                    xmlhttpp.addEventListener("load", reqListener);
-                    xmlhttpp.open("GET", param + "/" + param2 + ".markdown", true);
-                    xmlhttpp.send();
+                    if (param === "") {
+                        xmlhttpp.addEventListener("load", reqListener);
+                        xmlhttpp.open("GET", "/main/index.markdown", true);
+                        xmlhttpp.send();
+                    } else {
+                        xmlhttpp.addEventListener("load", reqListener);
+                        xmlhttpp.open("GET", param + "/" + param2 + ".markdown", true);
+                        xmlhttpp.send();
+                    }
                 }
 
                 function getUrlParam(param) {
@@ -157,7 +133,21 @@ $(document).ready(function() {
                     return match ? match[1] : "";
                 }
 
+                function getUrlParam_pmr(param) {
+                    param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+                    var regex = new RegExp("[??]" + param + "/([^&#]*)/");
+                    var url = decodeURIComponent(window.location.href);
+                    var match = regex.exec(url);
+                    return match ? match[1] : "";
+                }
 
+                function getUrlParam2_pmr(param) {
+                    param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+                    var regex = new RegExp("[#]" + param + "/([^&#]*)/");
+                    var url = decodeURIComponent(window.location.href);
+                    var match = regex.exec(url);
+                    return match ? match[1] : "";
+                }
 
                 // Set the date we're counting down to
                 var countDownDate = new Date("Dec 24, 2020 00:00:00").getTime();

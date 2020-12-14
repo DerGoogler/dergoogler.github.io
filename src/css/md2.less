@@ -23,51 +23,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #606c71;
-    background-image: linear-gradient(to right, #0098fc 0%, #0076fe 51%, #0098fc 100%);
-}
-
-.page-content {
-    margin-left: 490px;
-    margin-right: 490px;
-    background-color: #fafafa;
-    box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12);
-
-}
-
-@media (max-width: 1440px) {
-    .page-content {
-        margin-left: 0px;
-        margin-right: 0px;
-        background-color: white;
-        box-shadow:
-            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-            0 12.5px 10px rgba(0, 0, 0, 0.06),
-            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-            0 100px 80px rgba(0, 0, 0, 0.12);
-    }
-}
-
-@media (max-width: 767px) {
-    .page-content {
-        margin-left: 0px;
-        margin-right: 0px;
-        background-color: white;
-        box-shadow:
-            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-            0 12.5px 10px rgba(0, 0, 0, 0.06),
-            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-            0 100px 80px rgba(0, 0, 0, 0.12);
-    }
 }
 
 a {
@@ -105,7 +60,7 @@ html {
 
 .header-wrapper {
     background: #0076fe;
-    background-color: white;
+    background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
 
@@ -135,13 +90,8 @@ html {
             display: flex;
 
             a {
-                color: #0098fc;
+                color: white;
                 position: relative;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
                 align-items: center;
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -168,16 +118,16 @@ html {
                 outline: none;
                 border: none;
                 transition: 0.5s;
-                background-image: linear-gradient(to right, #0098fc 0%, #0076fe 51%, #0098fc 100%);
+                background-color: white;
                 border-radius: 100px;
-                color: white;
+                color: black;
                 display: inline-block;
                 height: 25px;
                 width: 100px;
                 font-size: 15px;
 
                 &:hover {
-                    background-position: right center;
+                    background-color: gray;
                 }
             }
         }
@@ -219,23 +169,20 @@ html {
 }
 
 .footer {
-    background: white;
+    background: #0076fe;
+    background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 25px 0;
     position: relative;
 
     a {
-        background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: white;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     p {
-        background: linear-gradient(119.42deg, #0076fe, #0098fc 79.71%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: white;
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 }
@@ -456,8 +403,3 @@ p.copyright {
         vertical-align: middle;
     }
 }
-
-#mydiv {
-    position: absolute;
-    
-  }
