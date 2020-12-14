@@ -33,4 +33,4 @@ Follow this steps:
 
 ## Link Setup
 **Sample**
-https://dergoogler.github.io/?/pmr/#/DerGoogler/edb2cd6b4f60fe434ff7a6ede1675957/raw/b22ad0d3792e4fc43c759725c0471e5d3b092842/my-first-dgsm/
+https://dergoogler.github.io/?/pmr/#/DerGoogler/edb2cd6b4f60fe434ff7a6ede1675957/raw/my-first-dgsm/
