@@ -107,3 +107,14 @@ it will remove the header (navbar from this page) and you can diable the margin
 This can be useful by the [PMR-Cloud](https://dergoogler.github.io/?/blog/#/start-with-pmr-cloud/)
 
 ----
+
+----
+## Video
+**Example**     
+[video(w3schools.com/howto/rain.mp4)]
+
+**Code**
+```
+[video(w3schools.com/howto/rain.mp4)???] <-- without https://
+```
+----

@@ -28,7 +28,7 @@ Follow this steps:
 **You can use the basic Markdown syntax with [my custom markdown syntax](https://dergoogler.github.io/?/blog/#/componets/)**
 
 ## Setup pure markdown page
-```
+```html
 <!--[title(My First *.dgsm)???]-->
 <!--[header(false)???]-->
 <!--[webpage(true)???]-->
