@@ -98,11 +98,11 @@ $(document).ready(function() {
                 if (param_pmr === "pmr") {
                     if (param_pmr === "" || param2_pmr === ("")) {
                         xmlhttpp_pmr.addEventListener("load", reqListener);
-                        xmlhttpp_pmr.open("GET", "/main/index.markdown", true);
+                        xmlhttpp_pmr.open("GET", "/blog/start-with-pmr-cloud.markdown", true);
                         xmlhttpp_pmr.send();
                     } else {
                         xmlhttpp_pmr.addEventListener("load", reqListener);
-                        xmlhttpp_pmr.open("GET", "https://gist.githubusercontent.com/" + param2_pmr + ".dgsm", true);
+                        xmlhttpp_pmr.open("GET", "https://raw.githubusercontent.com/" + param2_pmr + ".dgsm", true);
                         xmlhttpp_pmr.send();
                     }
                 } else {
