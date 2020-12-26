@@ -331,9 +331,11 @@ if (window.location.pathname === "/editor/") {
                 } else {
                     function reqListener() {
                         var input = document.getElementById('content');
+                        var headerbar = document.getElementById('home-navbar-id');
                         input.innerHTML = parseDLGM(marked(this.responseText));
                         var text = document.getElementById('md-title').textContent;
                         document.title = text;
+                        headerbar.innerText = text.replace("- Der_Googler", "");
                         var hideNAV = document.getElementById('hide-nav').textContent;
                         if (hideNAV === "false") {
                             document.getElementById('web-header').style.display = 'none';

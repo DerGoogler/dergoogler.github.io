@@ -72,3 +72,20 @@
 {#card#}
 </div>
 </div>
+
+<br>
+<br>
+
+# Others
+<div class="row">
+<div class="col-sm-6">
+[=margin((6))]
+{#card#}
+=title((Spotify Mods))
+=description((Mods, Music))
+=btn-text((Use it free))
+=link((dergoogler.github.io/?/pmr/#/DerGoogler/general-releases/main/spotify-mods-v1/))
+{#card#}
+</div>
+</div>
+[=margin((60))]
