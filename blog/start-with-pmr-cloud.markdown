@@ -1,10 +1,17 @@
-<!--[title(Start with PMR-Cloud)]-->
-<!--[header(true)]-->
-<!--[webpage(false)]-->
-<!--[evens(true)]-->
+{#setting#}
+=title((Getting Started with PMR-Cloud))
+=header((true))
+{#setting#}
 
-# PMR-Cloud [svg-badge(Build)(PMR-Cloud)]
-getting started with PMR-Cloud
+/// Includes the navbar
+{#navbar-body#}
+{#=include((embeds/navbar))#}
+{#navbar-body#}
+
+{#gitmd#}
+
+# PMR-Cloud
+Getting Started with PMR-Cloud
 
 ## Setup
 [Sign](https://github.com/login) into GitHub or [create](https://github.com/join) an account.
@@ -28,13 +35,17 @@ Follow this steps:
 **You can use the basic Markdown syntax with [my custom markdown syntax](https://dergoogler.github.io/?/blog/#/componets/)**
 
 ## Setup pure markdown page
-```html
-<!--[title(My First *.dgsm)???]-->
-<!--[header(false)???]-->
-<!--[webpage(true)???]-->
-<!--[evens(false)???]-->
+```dgsm
+<!--
+{#setting#}
+=title((My First *.dgsm))
+=header((true))
+{#setting#???}
+-->
 ```
 
 ## Link Setup
 **Sample**    
 https://dergoogler.github.io/?/pmr/#/DerGoogler/tests/main/my-fisrst-dgsm/
+
+{#gitmd#}

@@ -1,4 +1,14 @@
-[title(Impressum)]
+{#setting#}
+=title((Imprint (GER) ))
+=header((true))
+{#setting#}
+
+/// Includes the navbar
+{#navbar-body#}
+{#=include((embeds/navbar))#}
+{#navbar-body#}
+
+{#gitmd#}
 
 # Impressum
 
@@ -11,6 +21,7 @@ Sollten Probleme auftreten oder sonstiges, dann kontaktieren Sie mich bitte unte
 
 ## Konzeption, Gestaltung und Realisierung
 - Hoster: [Github](https://github:com)
+- [Bootstrap 5 Beta 1](https://getbootstrap.com/)
 
 ## Domains
 - https://dergoogler.github.io
@@ -30,3 +41,5 @@ Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konk
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
 
 Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+
+{#gitmd#}

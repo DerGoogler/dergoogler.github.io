@@ -3,16 +3,12 @@
 =header((true))
 {#setting#}
 
-/// **Some Markdown componetns can't viewed here**
+/// Includes the navbar
+{#navbar-body#}
+{#=include((embeds/navbar))#}
+{#navbar-body#}
 
-\b
-\b
-\b
-/// Event Cooldown
-<center><h1><em id="dgo-event"></em></hq></center>
-\b
-\b
-\b
+/// **Some Markdown componetns can't viewed here**
 
 # Apps
 <div class="row">

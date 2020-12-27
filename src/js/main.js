@@ -18,6 +18,34 @@ function docT(type, ID) {
     }
 }
 
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-file");
+        if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                    if (this.status == 404) { elmnt.innerHTML = "File not found."; }
+                    /*remove the attribute, and call this function once more:*/
+                    elmnt.removeAttribute("include-file");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+        }
+    }
+};
+
 function download(filename, text) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -73,6 +101,7 @@ function parseDLGM(dlgmText) {
         //.replace(/\[modal\]*(\r\n|\r|\n)=id\((.*?)\)*(\r\n|\r|\n)=title\((.*?)\)*(\r\n|\r|\n)=content\((.*?)\)*(\r\n|\r|\n)=btn-text\((.*?)\)*(\r\n|\r|\n)\[\?modal\]*(\r\n|\r|\n)/gim, "<button type='button' class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#$2'>$8</button><div class='modal fade' id='$2' tabindex='-1' aria-labelledby='$2Label' aria-hidden='true'><div class='modal-dialog'><div class='modal-content'><div class='modal-header'><h5 class='modal-title' id='$2Label'>$4</h5><button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button></div><div class='modal-body'>$6</div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button></div></div></div></div>")
         .replace(/\{#accordion-item#\}*(\r\n|\r|\n)=id\(\((.*?)\)\)*(\r\n|\r|\n)=title\(((.*?))\)*(\r\n|\r|\n)=content\(((.*?))\)*(\r\n|\r|\n)\{#accordion-item#\}/gim, "<div class='accordion-item'><h2 class='accordion-header' id='heading$2'><button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapse$2' aria-expanded='true' aria-controls='collapse$2'>$4</button></h2><div id='collapse$2' class='accordion-collapse collapse' aria-labelledby='heading$2' data-bs-parent='#accordion$2'><div class='accordion-body'>$6</div></div></div>")
         .replace(/\{#gitmd#\}([\s\S]*?)\{#gitmd#\}/gim, "<article class='markdown-body'>$1</article>")
+        .replace(/\{#navbar-body#\}([\s\S]*?)\{#navbar-body#\}/gim, "<template id='dgsm-nav-content'>$1</template>")
         .replace(/\{#btn-collapse#\}*(\r\n|\r|\n)=id\(\((.*?)\)\)*(\r\n|\r|\n)=class\(\((.*?)\)\)*(\r\n|\r|\n)=btn-text\(\((.*?)\)\)*(\r\n|\r|\n)=content-text\(\(([\s\S]*?)\)\)*(\r\n|\r|\n)\{#btn-collapse#\}/gim, "<button class='btn btn-$4' type='button' data-bs-toggle='collapse' data-bs-target='#collapse$2' aria-expanded='false' aria-controls='collapse$2'>$6</button></p><div class='collapse' id='collapse$2'><div class='card card-body'>$8</div></div>")
         // page settings
         .replace(/\{#setting#\}*(\r\n|\r|\n)=title\(\((.*?)\)\)*(\r\n|\r|\n)=header\(\((.*?)\)\)*(\r\n|\r|\n)\{#setting#\}/gim, "<title id='md-title'>$2 - Der_Googler</title><title id='hide-nav'>$4</title>")
@@ -80,6 +109,7 @@ function parseDLGM(dlgmText) {
         .replace(/\{#sp#\}/gim, " ")
         .replace(/\\b/gim, '<br>')
         .replace(/\[=margin\(\((.*?)\)\)\]/gim, '<div style="margin: $1px;"></div>')
+        .replace(/\{#=include\(\((.*?)\)\)#\}/gim, '<div include-file="$1.em.dgsm"></div>')
         .replace(/\{#alert#\}*(\r\n|\r|\n)=title\(\((.*?)\)\)*(\r\n|\r|\n)=message\(\((.*?)\)\)*(\r\n|\r|\n)\{#alert#\}/gim, "<em class='markdown-alert' onclick='alert(\"$4\");' title='$2'>$2 (alert)</em>")
         // [text-badge(Will Added Soon!)(green)(Pitch)]
         .replace(/\:dot\:/gim, "\•")
@@ -305,17 +335,9 @@ if (window.location.pathname === "/editor/") {
                         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                        if (web_server.index.event.event_only === true) {
-                            // Display the result in the element
-                            document.getElementById("dgo-event").innerHTML = "<b>" + event_string_text + " IN:" + "<br>" + days + "d " + hours + "h " +
-                                minutes + "m " + seconds + "s " + "</b>";
-                        } else {
-                            // Display the result in the element
-                            document.getElementById("dgo-event").innerHTML = "<b>" + event_string_text + " IN: " + "</b>" + days + "d " + hours + "h " +
-                                minutes + "m " + seconds + "s ";
-
-                        }
+                        // Display the result in the element
+                        document.getElementById("dgo-event").innerHTML = "<b>" + days + "d " + hours + "h " +
+                            minutes + "m " + seconds + "s " + "</b>";
                         // If the count down is finished, write some text
                         if (distance < 0) {
                             clearInterval(x);
@@ -330,6 +352,11 @@ if (window.location.pathname === "/editor/") {
                     doc.getElementById('body').innerHTML = mainten;
                 } else {
                     function reqListener() {
+                        if (window.location.href !== "http://127.0.0.1:5500/" && window.location.href !== "https://dergoogler.github.io/") {
+                            document.getElementById('carouselExampleCaptions').style.display = 'none';
+                        } else {
+                            log.log('Nothing to hide');
+                        }
                         var input = document.getElementById('content');
                         var headerbar = document.getElementById('home-navbar-id');
                         input.innerHTML = parseDLGM(marked(this.responseText));
@@ -341,6 +368,12 @@ if (window.location.pathname === "/editor/") {
                             document.getElementById('web-header').style.display = 'none';
                             document.getElementById('web-footer').style.display = 'none';
                         }
+                        var dgsmnavcontent = document.getElementById('dgsm-nav-content');
+                        var navcontent = document.getElementById('navbar-contnet');
+                        if (dgsmnavcontent != null) {
+                            navcontent.innerHTML = dgsmnavcontent.innerHTML;
+                        }
+                        includeHTML();
                         dlgowe_event();
                         return;
                     }

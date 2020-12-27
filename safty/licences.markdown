@@ -3,6 +3,11 @@
 =header((true))
 {#setting#}
 
+/// Includes the navbar
+{#navbar-body#}
+{#=include((embeds/navbar))#}
+{#navbar-body#}
+
 {#gitmd#}
 
 # LICENCES
