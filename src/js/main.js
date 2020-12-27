@@ -286,7 +286,7 @@ if (window.location.pathname === "/editor/") {
             if (this.readyState == 4 && this.status == 200) {
                 var web_server = JSON.parse(this.responseText);
 
-                /*
+
                 function dlgowe_event() {
                     // Set the date we're counting down to
                     var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
@@ -323,7 +323,7 @@ if (window.location.pathname === "/editor/") {
                         }
                     }, 1000);
                 }
-                */
+
 
                 if (web_server.index.maintenance.active === false) {
                     doc.title = web_server.index.maintenance.title;
@@ -341,6 +341,7 @@ if (window.location.pathname === "/editor/") {
                             document.getElementById('web-header').style.display = 'none';
                             document.getElementById('web-footer').style.display = 'none';
                         }
+                        dlgowe_event();
                         return;
                     }
 

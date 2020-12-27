@@ -5,6 +5,15 @@
 
 /// **Some Markdown componetns can't viewed here**
 
+\b
+\b
+\b
+/// Event Cooldown
+<center><h1><em id="dgo-event"></em></hq></center>
+\b
+\b
+\b
+
 # Apps
 <div class="row">
 <div class="col-sm-6">
