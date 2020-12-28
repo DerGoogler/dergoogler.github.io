@@ -1,22 +1,11 @@
 // varbs
+var html34564 = "<!DOCTYPE html><html lang=\"en-US\"><head><meta name=\"description\" content=\"The official DGSM Editor! If you use PMR-Cloud will this tool help you so much!\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:url\" content=\"https://dergoogler.github.io/editor/\"><meta property=\"og:title\" content=\"DGSM Editor - Der_Googler\"><meta property=\"og:description\" content=\"The official DGSM Editor! If you use PMR-Cloud will this tool help you so much!\"><meta property=\"og:image\" content=\"https://dergoogler.github.io/src/images/googler.900.jpg\"><meta property=\"twitter:card\" content=\"summary_large_image\"><meta property=\"twitter:url\" content=\"https://dergoogler.github.io/editor/\"><meta property=\"twitter:title\" content=\"DGSM Editor - Der_Googler\"><meta property=\"twitter:description\" content=\"The official DGSM Editor! If you use PMR-Cloud will this tool help you so much!\"><meta property=\"twitter:image\" content=\"https://dergoogler.github.io/src/images/googler.900.jpg\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"><link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"/src/images/pmr-cloud.png\" /><link rel=\"stylesheet\" type=\"text/css\" href=\"/src/fw/css/all.css\"><link rel=\"stylesheet/less\" type=\"text/css\" href=\"/src/css/md.less\"><link rel=\"stylesheet/less\" type=\"text/css\" href=\"/src/css/md4.less\"><style>.markdown-body {box-sizing: border-box;min-width: 200px;max-width: 980px;margin: 0 auto;padding: 45px;}@media (max-width: 767px){.markdown-body{padding: 15px;}}</style><script src=\"https://cdn.jsdelivr.net/npm/less\"><script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script></script><script src=\"/src/js/main.js\"></script><script type=\"module\" src=\"https://cdn.jsdelivr.net/npm/@pwabuilder/pwainstall@latest/dist/pwa-install.min.js\"></script></head><body>";
+var html3456345 = "<script>includeHTML();</script><script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW\" crossorigin=\"anonymous\"></script></body></html>";
 var doc = document;
 var log = console;
-var mainten = "<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\"><style>html, body { padding: 0; margin: 0; width: 100%; height: 100%; user-select: none;}* {box-sizing: border-box;}body { text-align: center; padding: 0; background: #d6433b; color: #fff; font-family: Open Sans; }h1 { font-size: 50px; font-weight: 100; text-align: center;}body { font-family: Open Sans; font-weight: 100; font-size: 20px; color: #fff; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}article { display: block; width: 700px; padding: 50px; margin: 0 auto; }a { color: #fff; font-weight: bold;}a:hover { text-decoration: none; }svg { width: 75px; margin-top: 1em; }</style><article><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 202.24 202.24\"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 3</title><g id=\"Layer_2\" data-name=\"Layer 2\"><g id=\"Capa_1\" data-name=\"Capa 1\"><path class=\"cls-1\" d=\"M101.12,0A101.12,101.12,0,1,0,202.24,101.12,101.12,101.12,0,0,0,101.12,0ZM159,148.76H43.28a11.57,11.57,0,0,1-10-17.34L91.09,31.16a11.57,11.57,0,0,1,20.06,0L169,131.43a11.57,11.57,0,0,1-10,17.34Z\"/><path class=\"cls-1\" d=\"M101.12,36.93h0L43.27,137.21H159L101.13,36.94Zm0,88.7a7.71,7.71,0,1,1,7.71-7.71A7.71,7.71,0,0,1,101.12,125.63Zm7.71-50.13a7.56,7.56,0,0,1-.11,1.3l-3.8,22.49a3.86,3.86,0,0,1-7.61,0l-3.8-22.49a8,8,0,0,1-.11-1.3,7.71,7.71,0,1,1,15.43,0Z\"/></g></g></svg><h1>We&rsquo;ll be back soon!</h1><div><p>Sorry for the inconvenience. We&rsquo;re performing some maintenance at the moment. If you need to you can always follow us on <a href=\"http://t.me/dergoogler\">Telegram</a> for updates!</p><p>&mdash; The DG Team</p></div></article>";
 var onlay_eventa = "<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\"><script type=\"text/javascript\" src=\"/src/js/fireworks.js\"></script><script type=\"text/javascript\" src=\"/src/js/snowflakes.js\"></script><style>html,body {padding: 0;margin: 0;position: absolut;width: 100%;height: 100%;cursor: default;user-select: none;}* {box-sizing: border-box;}body {text-align: center;padding: 0;background: linear-gradient(119.42deg, #332500, #000000 79.71%);background-repeat: no-repeat;color: #694c00;font-family: Open Sans;}h1 {font-size: 25px;font-weight: 100;text-align: center;}body {font-family: Open Sans;font-weight: 100;font-size: 20px;text-align: center;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}article {display: block;width: 700px;padding: 50px;margin: 0 auto;}a {color: #fff;font-weight: bold;}a:hover {text-decoration: none;}i{font-size:75px;}</style><article><h1><i class=\"fad fa-glass-cheers\"></i></h1><h1><em id=\"dgo-event\"></em></h1><div><p>A happy New Year! Enjoy the cooldown.</p><p>&mdash; The DG Team</p></div></article>";
 var jsonfile = "https://pmr-cloud.firebaseio.com/web_server.json";
 var event_string_text = "SILVESTER";
-
-function docT(type, ID) {
-    switch (type) {
-        case id:
-            document.getElementById(ID);
-            break;
-        case cl:
-            document.getElementsByClassName(ID)
-            break;
-        default:
-    }
-}
 
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
@@ -94,7 +83,8 @@ function escapeHtml(unsafe) {
 function parseDLGM(dlgmText) {
     const dlg = dlgmText
         // main
-        .replace(/\[fa-icon\((.*?)\)\]/gim, "<i class='fab fa-$1'></i>>")
+        //.replace(/\<script\>([\s\S]*?)\<\/script\>/gim, "----\\bThis file includes JS, remove it please\\b----")
+        .replace(/\[fa-icon\((.*?)\)\]/gim, "<i class='fab fa-$1'></i>")
         .replace(/\[x\]/gim, "<i class='fa fa-check'>")
         .replace(/\[ \]/gim, "<i class='fa fa-remove'>")
         .replace(/\{#button#\}*(\r\n|\r|\n)=class\(\((.*?)\)\)*(\r\n|\r|\n)=text\(\((.*?)\)\)*(\r\n|\r|\n)=link\(\((.*?)\)\)*(\r\n|\r|\n)\{#button#\}/gim, "<button type='button' class='btn btn-$2' onclick='window.open(\"https://$6\");'>$4</button>")
@@ -103,13 +93,10 @@ function parseDLGM(dlgmText) {
         .replace(/\{#gitmd#\}([\s\S]*?)\{#gitmd#\}/gim, "<article class='markdown-body'>$1</article>")
         .replace(/\{#navbar-body#\}([\s\S]*?)\{#navbar-body#\}/gim, "<template id='dgsm-nav-content'>$1</template>")
         .replace(/\{#btn-collapse#\}*(\r\n|\r|\n)=id\(\((.*?)\)\)*(\r\n|\r|\n)=class\(\((.*?)\)\)*(\r\n|\r|\n)=btn-text\(\((.*?)\)\)*(\r\n|\r|\n)=content-text\(\(([\s\S]*?)\)\)*(\r\n|\r|\n)\{#btn-collapse#\}/gim, "<button class='btn btn-$4' type='button' data-bs-toggle='collapse' data-bs-target='#collapse$2' aria-expanded='false' aria-controls='collapse$2'>$6</button></p><div class='collapse' id='collapse$2'><div class='card card-body'>$8</div></div>")
-        // page settings
-        .replace(/\{#setting#\}*(\r\n|\r|\n)=title\(\((.*?)\)\)*(\r\n|\r|\n)=header\(\((.*?)\)\)*(\r\n|\r|\n)\{#setting#\}/gim, "<title id='md-title'>$2 - Der_Googler</title><title id='hide-nav'>$4</title>")
-        // end
         .replace(/\{#sp#\}/gim, " ")
         .replace(/\\b/gim, '<br>')
         .replace(/\[=margin\(\((.*?)\)\)\]/gim, '<div style="margin: $1px;"></div>')
-        .replace(/\{#=include\(\((.*?)\)\)#\}/gim, '<div include-file="$1.em.dgsm"></div>')
+        .replace(/\{#=include\(\((.*?)\)\)#\}/gim, '<p include-file="$1.em.dgsm"></p>')
         .replace(/\{#alert#\}*(\r\n|\r|\n)=title\(\((.*?)\)\)*(\r\n|\r|\n)=message\(\((.*?)\)\)*(\r\n|\r|\n)\{#alert#\}/gim, "<em class='markdown-alert' onclick='alert(\"$4\");' title='$2'>$2 (alert)</em>")
         // [text-badge(Will Added Soon!)(green)(Pitch)]
         .replace(/\:dot\:/gim, "\•")
@@ -126,108 +113,21 @@ function parseDLGM(dlgmText) {
 }
 
 if (window.location.pathname === "/editor/") {
+
     function editor_paeser() {
-        var xhuj = doc.getElementById('dgsm_input').textContent;
+        var xhuj = doc.getElementById('dgsm_input').value;
+        var dgsm_output = document.getElementById('dgsm_output').contentWindow.document;
+        dgsm_output.open();
+        dgsm_output.write(html34564 + parseDLGM(marked(xhuj)) + html3456345);
+        dgsm_output.close();
         var fdsjkhfg = doc.getElementById('entred_letters');
-        doc.getElementById('dgsm_output_ful').innerHTML = parseDLGM(marked( /*escapeHtml(*/ xhuj)) /*)*/ ;
         fdsjkhfg.innerHTML = "Entered letters: " + xhuj.length;
+    }
 
-        const editor = document.getElementById('dgsm_input');
-        const selectionOutput = document.getElementById('selection');
-
-        function getTextSegments(element) {
-            const textSegments = [];
-            Array.from(element.childNodes).forEach((node) => {
-                switch (node.nodeType) {
-                    case Node.TEXT_NODE:
-                        textSegments.push({ text: node.nodeValue, node });
-                        break;
-
-                    case Node.ELEMENT_NODE:
-                        textSegments.splice(textSegments.length, 0, ...(getTextSegments(node)));
-                        break;
-
-                    default:
-                        throw new Error(`Unexpected node type: ${node.nodeType}`);
-                }
-            });
-            return textSegments;
-        }
-
-        editor.addEventListener('input', updateEditor);
-
-        function updateEditor() {
-            const sel = window.getSelection();
-            const textSegments = getTextSegments(editor);
-            const textContent = textSegments.map(({ text }) => text).join('');
-            let anchorIndex = null;
-            let focusIndex = null;
-            let currentIndex = 0;
-            textSegments.forEach(({ text, node }) => {
-                if (node === sel.anchorNode) {
-                    anchorIndex = currentIndex + sel.anchorOffset;
-                }
-                if (node === sel.focusNode) {
-                    focusIndex = currentIndex + sel.focusOffset;
-                }
-                currentIndex += text.length;
-            });
-
-            editor.innerHTML = renderText(escapeHtml(textContent));
-
-            restoreSelection(anchorIndex, focusIndex);
-
-        }
-
-        function restoreSelection(absoluteAnchorIndex, absoluteFocusIndex) {
-            const sel = window.getSelection();
-            const textSegments = getTextSegments(editor);
-            let anchorNode = editor;
-            let anchorIndex = 0;
-            let focusNode = editor;
-            let focusIndex = 0;
-            let currentIndex = 0;
-            textSegments.forEach(({ text, node }) => {
-                const startIndexOfNode = currentIndex;
-                const endIndexOfNode = startIndexOfNode + text.length;
-                if (startIndexOfNode <= absoluteAnchorIndex && absoluteAnchorIndex <= endIndexOfNode) {
-                    anchorNode = node;
-                    anchorIndex = absoluteAnchorIndex - startIndexOfNode;
-                }
-                if (startIndexOfNode <= absoluteFocusIndex && absoluteFocusIndex <= endIndexOfNode) {
-                    focusNode = node;
-                    focusIndex = absoluteFocusIndex - startIndexOfNode;
-                }
-                currentIndex += text.length;
-            });
-
-            sel.setBaseAndExtent(anchorNode, anchorIndex, focusNode, focusIndex);
-        }
-
-        function renderText(text) {
-            const output = text
-                // dgsm basics
-                .replace(/\[(.*?)\]\((.*?)\)/gim, "<span class='dgsm_high_link_text'>[$1]</span><span class='dgsm_high_link'>($2)</span>")
-                .replace(/\{#(.*?)#\}([\s\S]*?)\{#(.*?)#\}/gim, "<span class='dgsm_high_dgsm_start'>{#</span><span class='dgsm_high_dgsm_start_inner'>$1</span><span class='dgsm_high_dgsm_start'>#}</span>$2<span class='dgsm_high_dgsm_start'>{#</span><span class='dgsm_high_dgsm_start_inner'>$3</span><span class='dgsm_high_dgsm_start'>#}</span>")
-                .replace(/\\n/gim, "<span class='dgsm_high_line_break'>\\n</span>")
-                .replace(/\\b/gim, "<span class='dgsm_high_line_break'>\\b</span>")
-                .replace(/[\/]{3}(.+)/gim, "<span class='dgsm_high_comment'>///$1</span>")
-                .replace(/[\#]{1}(.+)/gim, "<span class='dgsm_high_hr_header'>#$1</span>")
-                .replace(/[\#]{2}(.+)/gim, "<span class='dgsm_high_hr_header'>##$1</span>")
-                .replace(/[\#]{3}(.+)/gim, "<span class='dgsm_high_hr_header'>###$1</span>")
-                .replace(/[\#]{4}(.+)/gim, "<span class='dgsm_high_hr_header'>####$1</span>")
-                .replace(/[\#]{5}(.+)/gim, "<span class='dgsm_high_hr_header'>#####$1</span>")
-                .replace(/[\#]{6}(.+)/gim, "<span class='dgsm_high_hr_header'>######$1</span>")
-                .replace(/\=(.*?)\(\((.*?)\)\)/gim, "<span class='dgsm_high_equalll'>=$1</span><span class='dgsm_high_string'>(($2))</span>")
-                .replace(/\`(.*?)\`/gim, "<span class='dgsm_high_note'>`$1`</span>")
-                // html basics
-                .replace(/&lt;(.*?)&gt;/gim, "<span class='dgsm_high_left_right'>&lt</span><span class='dgsm_high_left_right_inner'>$1</span><span class='dgsm_high_left_right'>&gt;</span>")
-                .replace(/&lt;\/(.*?)&gt;/gim, "<span class='dgsm_high_left_right'>/&lt</span><span class='dgsm_high_left_right_inner'>$1</span><span class='dgsm_high_left_right'>&gt;</span>")
-
-            return output.trim()
-        }
-
-        updateEditor();
+    function preview() {
+        var xhuj485645 = doc.getElementById('dgsm_input').value;
+        var myWindow = window.open('', 'myWindow', 'location=yes,height=2000,width=1000,scrollbars=0,status=yes,toolbar=0');
+        myWindow.document.write(html34564 + parseDLGM(marked(xhuj485645)) + html3456345);
     }
 
     function get_source_from_url() {
@@ -296,7 +196,7 @@ if (window.location.pathname === "/editor/") {
                 alert('Update and release of v1.0\n\n**Added**\n- Load, Saving and Download\n- Tools to generate a table\n- Live highlight syntax\n\n**Supports**\n- All Compos are available in the Editor\n\n**Others**\n- Site works with Bootstrap 5.0 Beta 1\n- Updated DGSM to v2');
                 break;
             case "v1.1":
-                alert('');
+                alert('Update and release of v1.1\n\n**Fixes and Adds**\n- Editer preview is better (beta)');
                 break;
             default:
                 // code block
@@ -309,153 +209,150 @@ if (window.location.pathname === "/editor/") {
         return dialogText;
     };
 } else {
-    // some controllers
-    $(document).ready(function() {
-        var xmlhttpp = new XMLHttpRequest();
-        xmlhttpp.onreadystatechange = function() {
+
+
+    function dlgowe_event() {
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Display the result in the element
+            document.getElementById("dgo-event").innerHTML = "<b>" + days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s " + "</b>";
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("dgo-event").innerHTML = "<b>" + "2020 IS OVER!" + "</b>";
+            }
+        }, 1000);
+    }
+
+    function getUrlParam_base64(param) {
+        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+        var regex = new RegExp("[?]" + param + "=([^&#]*)");
+        var url = decodeURIComponent(window.location.href);
+        var match = regex.exec(url);
+        return match ? match[1] : "";
+    }
+
+    function reqListener() {
+        var param_base64 = getUrlParam_base64('code');
+        //var input = document.getElementById('content');
+        var dgsm_input = document.getElementById('content').contentWindow.document;
+        if (param_base64 === "") {
+            dgsm_input.open();
+            dgsm_input.write(html34564 + parseDLGM(marked(this.responseText)) + html3456345);
+            dgsm_input.close();
+        } else {
+            dgsm_input.open();
+            dgsm_input.write(html34564 + parseDLGM(marked(unescape(encodeURIComponent(atob(param_base64))))) + html3456345);
+            dgsm_input.close();
+        }
+        includeHTML();
+    }
+
+
+    var xmlhttpp = new XMLHttpRequest();
+    var xmlhttpp_pmr = new XMLHttpRequest();
+    var xmlhttpp_base64 = new XMLHttpRequest();
+    var param = getUrlParam('');
+    var param2 = getUrlParam2('');
+    var param_pmr = getUrlParam_pmr('');
+    var param2_pmr = getUrlParam2_pmr('');
+
+    if (param === "blog") {
+        document.title = "Blog - Der_Googler";
+    } else if (param === "apps") {
+        document.title = "Apps - Der_Googler";
+    } else if (param === "safty") {
+        document.title = "Safty - Der_Googler";
+    } else if (param === "changelogs") {
+        document.title = "Changelogs - Der_Googler";
+    } else if (param === "pmr") {
+        document.title = "PMR-Cloud - Der_Googler";
+    }
+
+    if (param_pmr === "pmr") {
+        var xmlhttp44 = new XMLHttpRequest();
+        xmlhttp44.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var web_server = JSON.parse(this.responseText);
-
-
-                function dlgowe_event() {
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
-
-                    // Update the count down every 1 second
-                    var x = setInterval(function() {
-
-                        // Get today's date and time
-                        var now = new Date().getTime();
-
-                        // Find the distance between now and the count down date
-                        var distance = countDownDate - now;
-
-                        // Time calculations for days, hours, minutes and seconds
-                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                        // Display the result in the element
-                        document.getElementById("dgo-event").innerHTML = "<b>" + days + "d " + hours + "h " +
-                            minutes + "m " + seconds + "s " + "</b>";
-                        // If the count down is finished, write some text
-                        if (distance < 0) {
-                            clearInterval(x);
-                            document.getElementById("dgo-event").innerHTML = "<b>" + "2020 IS OVER!" + "</b>";
-                        }
-                    }, 1000);
-                }
-
-
-                if (web_server.index.maintenance.active === false) {
-                    doc.title = web_server.index.maintenance.title;
-                    doc.getElementById('body').innerHTML = mainten;
-                } else {
-                    function reqListener() {
-                        if (window.location.href !== "http://127.0.0.1:5500/" && window.location.href !== "https://dergoogler.github.io/") {
-                            document.getElementById('carouselExampleCaptions').style.display = 'none';
-                        } else {
-                            log.log('Nothing to hide');
-                        }
-                        var input = document.getElementById('content');
-                        var headerbar = document.getElementById('home-navbar-id');
-                        input.innerHTML = parseDLGM(marked(this.responseText));
-                        var text = document.getElementById('md-title').textContent;
-                        document.title = text;
-                        headerbar.innerText = text.replace("- Der_Googler", "");
-                        var hideNAV = document.getElementById('hide-nav').textContent;
-                        if (hideNAV === "false") {
-                            document.getElementById('web-header').style.display = 'none';
-                            document.getElementById('web-footer').style.display = 'none';
-                        }
-                        var dgsmnavcontent = document.getElementById('dgsm-nav-content');
-                        var navcontent = document.getElementById('navbar-contnet');
-                        if (dgsmnavcontent != null) {
-                            navcontent.innerHTML = dgsmnavcontent.innerHTML;
-                        }
-                        includeHTML();
-                        dlgowe_event();
-                        return;
-                    }
-
-                    var xmlhttpp = new XMLHttpRequest();
-                    var xmlhttpp_pmr = new XMLHttpRequest();
-                    var param = getUrlParam('');
-                    var param2 = getUrlParam2('');
-                    var param_pmr = getUrlParam_pmr('');
-                    var param2_pmr = getUrlParam2_pmr('');
-
-                    if (param === "blog") {
-                        document.title = "Blog - Der_Googler";
-                    } else if (param === "apps") {
-                        document.title = "Apps - Der_Googler";
-                    } else if (param === "safty") {
-                        document.title = "Safty - Der_Googler";
-                    } else if (param === "changelogs") {
-                        document.title = "Changelogs - Der_Googler";
-                    } else if (param === "pmr") {
-                        document.title = "PMR-Cloud - Der_Googler";
-                    }
-
-                    if (param_pmr === "pmr") {
-                        if (param_pmr === "" || param2_pmr === ("")) {
-                            xmlhttpp_pmr.addEventListener("load", reqListener);
-                            xmlhttpp_pmr.open("GET", "/blog/start-with-pmr-cloud.markdown", true);
-                            xmlhttpp_pmr.send();
-                        } else {
-                            xmlhttpp_pmr.addEventListener("load", reqListener);
-                            xmlhttpp_pmr.open("GET", "https://raw.githubusercontent.com/" + param2_pmr + ".dgsm", true);
-                            xmlhttpp_pmr.send();
-                        }
+                const users = JSON.parse(this.responseText);
+                users.map(({ id, reason }) => {
+                    var banneduser = `#/${id}/`;
+                    if (window.location.hash.includes(banneduser)) {
+                        $(document).ready(function() {
+                            document.title = [id] + " is banned";
+                            document.getElementById('body').innerHTML = `<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\"><style>html, body { padding: 0; margin: 0; width: 100%; height: 100%; user-select: none;}* {box-sizing: border-box;}body { text-align: center; padding: 0; background: #d6433b; color: #fff; font-family: Open Sans; }h1 { font-size: 50px; font-weight: 100; text-align: center;}body { font-family: Open Sans; font-weight: 100; font-size: 20px; color: #fff; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}article { display: block; width: 700px; padding: 50px; margin: 0 auto; }a { color: #fff; font-weight: bold;}a:hover { text-decoration: none; }svg { width: 75px; margin-top: 1em; }</style><article><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 202.24 202.24\"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 3</title><g id=\"Layer_2\" data-name=\"Layer 2\"><g id=\"Capa_1\" data-name=\"Capa 1\"><path class=\"cls-1\" d=\"M101.12,0A101.12,101.12,0,1,0,202.24,101.12,101.12,101.12,0,0,0,101.12,0ZM159,148.76H43.28a11.57,11.57,0,0,1-10-17.34L91.09,31.16a11.57,11.57,0,0,1,20.06,0L169,131.43a11.57,11.57,0,0,1-10,17.34Z\"/><path class=\"cls-1\" d=\"M101.12,36.93h0L43.27,137.21H159L101.13,36.94Zm0,88.7a7.71,7.71,0,1,1,7.71-7.71A7.71,7.71,0,0,1,101.12,125.63Zm7.71-50.13a7.56,7.56,0,0,1-.11,1.3l-3.8,22.49a3.86,3.86,0,0,1-7.61,0l-3.8-22.49a8,8,0,0,1-.11-1.3,7.71,7.71,0,1,1,15.43,0Z\"/></g></g></svg><h1>${id} is banned</h1><div><p>THIS USER HAS BEEN BY PAGE BANNED<br><b>Reason: </b>${reason}<br></p><p>&mdash; The DG Team</p></div></article>`;
+                        });
+                    } else if (param_pmr === "" || param2_pmr === "") {
+                        xmlhttpp_pmr.addEventListener("load", reqListener);
+                        xmlhttpp_pmr.open("GET", "/blog/start-with-pmr-cloud.markdown", true);
+                        xmlhttpp_pmr.send();
                     } else {
-                        if (param === "") {
-                            xmlhttpp.addEventListener("load", reqListener);
-                            xmlhttpp.open("GET", "/main/index.markdown", true);
-                            xmlhttpp.send();
-                        } else {
-                            xmlhttpp.addEventListener("load", reqListener);
-                            xmlhttpp.open("GET", param + "/" + param2 + ".markdown", true);
-                            xmlhttpp.send();
-                        }
+                        xmlhttpp_pmr.addEventListener("load", reqListener);
+                        xmlhttpp_pmr.open("GET", "https://raw.githubusercontent.com/" + param2_pmr + ".dgsm", true);
+                        xmlhttpp_pmr.send();
                     }
 
-                    function getUrlParam(param) {
-                        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-                        var regex = new RegExp("[?]" + param + "/([^&#]*)/");
-                        var url = decodeURIComponent(window.location.href);
-                        var match = regex.exec(url);
-                        return match ? match[1] : "";
-                    }
-
-                    function getUrlParam2(param) {
-                        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-                        var regex = new RegExp("[#]" + param + "/([^&#]*)/");
-                        var url = decodeURIComponent(window.location.href);
-                        var match = regex.exec(url);
-                        return match ? match[1] : "";
-                    }
-
-                    function getUrlParam_pmr(param) {
-                        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-                        var regex = new RegExp("[??]" + param + "/([^&#]*)/");
-                        var url = decodeURIComponent(window.location.href);
-                        var match = regex.exec(url);
-                        return match ? match[1] : "";
-                    }
-
-                    function getUrlParam2_pmr(param) {
-                        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-                        var regex = new RegExp("[#]" + param + "/([^&#]*)/");
-                        var url = decodeURIComponent(window.location.href);
-                        var match = regex.exec(url);
-                        return match ? match[1] : "";
-                    }
-                    // dlgowe_event();
-
-                }
+                });
             }
         };
-        xmlhttpp.open("GET", jsonfile, true);
-        xmlhttpp.send();
-    });
+        xmlhttp44.open("GET", "https://pmr-cloud.firebaseio.com/users.json", true);
+        xmlhttp44.send();
+    } else {
+        if (param === "") {
+            xmlhttpp.addEventListener("load", reqListener);
+            xmlhttpp.open("GET", "/main/index.markdown", true);
+            xmlhttpp.send();
+        } else {
+            xmlhttpp.addEventListener("load", reqListener);
+            xmlhttpp.open("GET", param + "/" + param2 + ".markdown", true);
+            xmlhttpp.send();
+        }
+    }
+
+    function getUrlParam(param) {
+        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+        var regex = new RegExp("[?]" + param + "/([^&#]*)/");
+        var url = decodeURIComponent(window.location.href);
+        var match = regex.exec(url);
+        return match ? match[1] : "";
+    }
+
+    function getUrlParam2(param) {
+        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+        var regex = new RegExp("[#]" + param + "/([^&#]*)/");
+        var url = decodeURIComponent(window.location.href);
+        var match = regex.exec(url);
+        return match ? match[1] : "";
+    }
+
+    function getUrlParam_pmr(param) {
+        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+        var regex = new RegExp("[?]" + param + "/([^&#]*)/");
+        var url = decodeURIComponent(window.location.href);
+        var match = regex.exec(url);
+        return match ? match[1] : "";
+    }
+
+    function getUrlParam2_pmr(param) {
+        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+        var regex = new RegExp("[#]" + param + "/([^&#]*)/");
+        var url = decodeURIComponent(window.location.href);
+        var match = regex.exec(url);
+        return match ? match[1] : "";
+    }
 }

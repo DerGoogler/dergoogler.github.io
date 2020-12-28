@@ -1,12 +1,6 @@
-{#setting#}
-=title((Components))
-=header((true))
-{#setting#}
-
-/// Includes the navbar
-{#navbar-body#}
-{#=include((embeds/navbar))#}
-{#navbar-body#}
+<page>
+{#=include((/embeds/navbar))#}
+<div class="container-fluid" style="padding:15px;">
 
 # Componets
 here can you see all custom markdown componets    
@@ -15,22 +9,7 @@ View [LICENCE](https://dergoogler.github.io/?/safty/#/licences/)
 <br>
 
 ----
-## Page Settings
-**Example**     
-        
-N/A
-
-**Code**
-```
-{#setting#}
-=title((Components))
-=header((true))
-{#setting???#}
-```
-----
-
-----
-## Edit the Navbar
+## Include
 **Example**     
         
 N/A      
@@ -41,44 +20,6 @@ N/A
 //???/ Includes the navbar
 {#navbar-body#???}
 {#=include((embeds/navbar))#???}
-{#navbar-body#???}
-```
-\b
-**Code (No Include)**
-```
-{#navbar-body#???}
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/editor/">Editor</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/?/blog/#/start-with-pmr-cloud/">PMR-Cloud</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Social
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="https://instagram.com/der_googler">Instagram</a></li>
-            <li><a class="dropdown-item" href="https://t.me/dergoogler">Telegram</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Safty
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="/?/safty/#/licences/">Licences</a></li>
-            <li><a class="dropdown-item" href="/?/safty/#/impressum/">Imprint (GER)</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
 {#navbar-body#???}
 ```
 ----
@@ -564,3 +505,7 @@ Accordion Item #3
 </div>
 ```
 ----
+
+
+</div>
+</page>

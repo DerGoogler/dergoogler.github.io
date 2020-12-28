@@ -1,12 +1,5 @@
-{#setting#}
-=title((Licences))
-=header((true))
-{#setting#}
-
-/// Includes the navbar
-{#navbar-body#}
-{#=include((embeds/navbar))#}
-{#navbar-body#}
+<page>
+{#=include((/embeds/navbar))#}
 
 {#gitmd#}
 
@@ -66,6 +59,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
+~ **20.12.2020 / 18:45**
 {#gitmd#}
 
-~ **20.12.2020 / 18:45**
+
+</page>

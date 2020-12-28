@@ -1,14 +1,6 @@
-{#setting#}
-=title((Home))
-=header((true))
-{#setting#}
-
-/// Includes the navbar
-{#navbar-body#}
-{#=include((embeds/navbar))#}
-{#navbar-body#}
-
-/// **Some Markdown componetns can't viewed here**
+<page>
+{#=include((/embeds/navbar))#}
+<div class="container-fluid" style="padding:15px;">
 
 # Apps
 <div class="row">
@@ -94,3 +86,6 @@
 </div>
 </div>
 [=margin((60))]
+</div>
+</page>
+
