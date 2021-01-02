@@ -83,7 +83,10 @@ function escapeHtml(unsafe) {
 function parseDLGM(dlgmText) {
     const dlg = dlgmText
         // main
-        //.replace(/\<script\>([\s\S]*?)\<\/script\>/gim, "----\\bThis file includes JS, remove it please\\b----")
+        .replace(/\<script\>([\s\S]*?)\<script\>/gim, "<script>$1</script>")
+        .replace(/\<page\>([\s\S]*?)\<page\>/gim, "<div>$1</div>")
+        .replace(/\<style\>([\s\S]*?)\<style\>/gim, "<style>$1</style>")
+        .replace(/\<a (.*?)\>([\s\S]*?)\<\/a\>/gim, "<a $1 target='_blank'>$2</a>")
         .replace(/\[fa-icon\((.*?)\)\]/gim, "<i class='fab fa-$1'></i>")
         .replace(/\[x\]/gim, "<i class='fa fa-check'>")
         .replace(/\[ \]/gim, "<i class='fa fa-remove'>")
@@ -97,15 +100,16 @@ function parseDLGM(dlgmText) {
         .replace(/\\b/gim, '<br>')
         .replace(/\[=margin\(\((.*?)\)\)\]/gim, '<div style="margin: $1px;"></div>')
         .replace(/\{#=include\(\((.*?)\)\)#\}/gim, '<p include-file="$1.em.dgsm"></p>')
-        .replace(/\{#alert#\}*(\r\n|\r|\n)=title\(\((.*?)\)\)*(\r\n|\r|\n)=message\(\((.*?)\)\)*(\r\n|\r|\n)\{#alert#\}/gim, "<em class='markdown-alert' onclick='alert(\"$4\");' title='$2'>$2 (alert)</em>")
+        .replace(/<alert([\s\S]*?)title="(.*?)"([\s\S]*?)>(.*?)<alert>/gim, "<em class='markdown-alert' onclick='alert(\"$4\");' title='$2'>$2 (alert)</em>")
         // [text-badge(Will Added Soon!)(green)(Pitch)]
         .replace(/\:dot\:/gim, "\•")
         .replace(/\{#news-alert#\}*(\r\n|\r|\n)=class\(\((.*?)\)\)*(\r\n|\r|\n)=b-text\(\((.*?)\)\)*(\r\n|\r|\n)=n-text\(\((.*?)\)\)*(\r\n|\r|\n)\{#news-alert#\}/gim, "<div class='news_alert'><div class='alert alert-$2 alert-dismissible fade show' role='alert'><strong>$4 </strong>$6</div></div>")
         .replace(/\{#progressbar#\}*(\r\n|\r|\n)=color\(\((.*?)\)\)*(\r\n|\r|\n)=progress\(\((.*?)\)\)*(\r\n|\r|\n)\{#progressbar#\}/gim, "<div class='dgsm_progrssbar' style='margin:5px;'><div class='progress'><div class='progress-bar' role='progressbar' style='width: $4%;background-color: #$2;' aria-valuenow='$1' aria-valuemin='0' aria-valuemax='100'>$4%</div></div></div>")
         .replace(/\{#video\(\((.*?)\)\)#\}/gim, "<video width='50%' style='border-radius:10px;outline:none;' controls controlsList='nodownload' class='myvideo'><source src='https://$1' type='video/mp4'>Your browser does not support the video tag.</video>")
-        .replace(/\{#card#\}*(\r\n|\r|\n)=title\(\((.*?)\)\)*(\r\n|\r|\n)=description\(\((.*?)\)\)*(\r\n|\r|\n)=btn-text\(\((.*?)\)\)*(\r\n|\r|\n)=link\(\((.*?)\)\)*(\r\n|\r|\n)\{#card#\}/gim, "<div class='card'><div class='card-body'><h5 class='card-title'>$2</h5><p class='card-text'>$4</p><a href='https://$8' class='btn btn-primary'>$6</a></div></div>")
+        .replace(/\{#card#\}*(\r\n|\r|\n)=title\(\((.*?)\)\)*(\r\n|\r|\n)=description\(\((.*?)\)\)*(\r\n|\r|\n)=btn-text\(\((.*?)\)\)*(\r\n|\r|\n)=link\(\((.*?)\)\)*(\r\n|\r|\n)\{#card#\}/gim, "<div class='card'><div class='card-body'><h5 class='card-title'>$2</h5><p class='card-text'>$4</p><a href='https://$8' target='_blank' class='btn btn-primary'>$6</a></div></div>")
         // tests
         .replace(/\<\!\-\-(.+)\-\-\>/gim, '$1')
+        .replace(/[\/]{3}([\s\S]*?)/g, '\<\!\-\- $1 \-\-\>')
         .replace(/[\/]{3}(.+)/g, '\<\!\-\- $1 \-\-\>')
         .replace(/[\?]{3}/g, '')
 
@@ -139,13 +143,18 @@ if (window.location.pathname === "/editor/") {
             if (save_file_as.includes('.md') || save_file_as.includes('.markdown') || save_file_as.includes('.dgsm')) {
                 var xmlhttpp_editor = new XMLHttpRequest();
                 xmlhttpp_editor.onreadystatechange = function() {
+                    var dgsm_output11 = document.getElementById('dgsm_output').contentWindow.document;
                     if (this.readyState == 4) {
                         if (this.status == 200) {
-                            dgsm_repo_input.innerHTML = escapeHtml(this.responseText);
+                            dgsm_output11.open();
+                            dgsm_output11.write(html34564 + parseDLGM(marked(this.responseText)) + html3456345);
+                            dgsm_output11.close();
                             editor_paeser();
                         }
                         if (this.status == 404) {
-                            dgsm_repo_input.innerHTML = "# ERROR 404\nThe page \" " + save_file_as + " \" was nor found on the internet.\n**Try an other link**";
+                            dgsm_output11.open();
+                            dgsm_output11.write(html34564 + parseDLGM(marked('{#=include((/embeds/404))#}')) + html3456345);
+                            dgsm_output11.close();
                             editor_paeser();
                         }
                     }
