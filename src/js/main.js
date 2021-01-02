@@ -103,6 +103,7 @@ function parseDLGM(dlgmText) {
         .replace(/<alert([\s\S]*?)title="(.*?)"([\s\S]*?)>(.*?)<alert>/gim, "<em class='markdown-alert' onclick='alert(\"$4\");' title='$2'>$2 (alert)</em>")
         // [text-badge(Will Added Soon!)(green)(Pitch)]
         .replace(/\:dot\:/gim, "\•")
+        .replace(/\:slight_smile\:/gim, "<img style=\"-o-object-fit:contain;object-fit:contain;width:1.375em;height:1.375em;vertical-align:bottom\" src=\"https://discord.com/assets/da3651e59d6006dfa5fa07ec3102d1f3.svg\">")
         .replace(/\{#news-alert#\}*(\r\n|\r|\n)=class\(\((.*?)\)\)*(\r\n|\r|\n)=b-text\(\((.*?)\)\)*(\r\n|\r|\n)=n-text\(\((.*?)\)\)*(\r\n|\r|\n)\{#news-alert#\}/gim, "<div class='news_alert'><div class='alert alert-$2 alert-dismissible fade show' role='alert'><strong>$4 </strong>$6</div></div>")
         .replace(/\{#progressbar#\}*(\r\n|\r|\n)=color\(\((.*?)\)\)*(\r\n|\r|\n)=progress\(\((.*?)\)\)*(\r\n|\r|\n)\{#progressbar#\}/gim, "<div class='dgsm_progrssbar' style='margin:5px;'><div class='progress'><div class='progress-bar' role='progressbar' style='width: $4%;background-color: #$2;' aria-valuenow='$1' aria-valuemin='0' aria-valuemax='100'>$4%</div></div></div>")
         .replace(/\{#video\(\((.*?)\)\)#\}/gim, "<video width='50%' style='border-radius:10px;outline:none;' controls controlsList='nodownload' class='myvideo'><source src='https://$1' type='video/mp4'>Your browser does not support the video tag.</video>")

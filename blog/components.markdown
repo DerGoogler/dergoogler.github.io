@@ -65,6 +65,18 @@ N/A
 ----
 
 ----
+## :???slight_smile???: :slight_smile:
+**Example**    
+            
+lol :slight_smile: lol
+
+**Code**
+```
+:slight_smile???:
+```
+----
+
+----
 ## Dots
 **Example**   
           
