@@ -129,6 +129,12 @@ if (window.location.pathname === "/editor/") {
         fdsjkhfg.innerHTML = "Entered letters: " + xhuj.length;
     }
 
+    function preview_code() {
+        var xhuj48545 = doc.getElementById('dgsm_input').value;
+        var myWindow = window.open('', 'myWindow', 'location=yes,height=2000,width=1000,scrollbars=0,status=yes,toolbar=0');
+        myWindow.document.write(html34564 + '<textarea class="form-control" id="dgsm_input" rows="3"style="display:inline-block;white-space: pre-wrap; height: 500px;overflow-y: scroll;overflow-x: hidden;resize: none;" spellcheck="false" readonly>' + parseDLGM(marked(xhuj48545)) + '</textarea>' + html3456345);
+    }
+
     function preview() {
         var xhuj485645 = doc.getElementById('dgsm_input').value;
         var myWindow = window.open('', 'myWindow', 'location=yes,height=2000,width=1000,scrollbars=0,status=yes,toolbar=0');
