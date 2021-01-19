@@ -225,110 +225,118 @@ if (window.location.pathname === "/editor/") {
         return dialogText;
     };
 } else {
+    if (window.location.pathname === "/pmr/") {
+        var xmlhttpp_pmr = new XMLHttpRequest();
+        var xmlhttpp_base64 = new XMLHttpRequest();
+        var param_pmr = getUrlParam_pmr('');
+        var param2_pmr = getUrlParam2_pmr('');
 
-
-    function dlgowe_event() {
-        // Set the date we're counting down to
-        var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            // Display the result in the element
-            document.getElementById("dgo-event").innerHTML = "<b>" + days + "d " + hours + "h " +
-                minutes + "m " + seconds + "s " + "</b>";
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("dgo-event").innerHTML = "<b>" + "2020 IS OVER!" + "</b>";
-            }
-        }, 1000);
-    }
-
-    function getUrlParam_base64(param) {
-        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-        var regex = new RegExp("[?]" + param + "=([^&#]*)");
-        var url = decodeURIComponent(window.location.href);
-        var match = regex.exec(url);
-        return match ? match[1] : "";
-    }
-
-    function reqListener() {
-        var param_base64 = getUrlParam_base64('code');
-        //var input = document.getElementById('content');
-        var dgsm_input = document.getElementById('content').contentWindow.document;
-        if (param_base64 === "") {
-            dgsm_input.open();
-            dgsm_input.write(html34564 + parseDLGM(marked(this.responseText)) + html3456345);
-            dgsm_input.close();
-        } else {
-            dgsm_input.open();
-            dgsm_input.write(html34564 + parseDLGM(marked(unescape(encodeURIComponent(atob(param_base64))))) + html3456345);
-            dgsm_input.close();
-        }
-        includeHTML();
-    }
-
-
-    var xmlhttpp = new XMLHttpRequest();
-    var xmlhttpp_pmr = new XMLHttpRequest();
-    var xmlhttpp_base64 = new XMLHttpRequest();
-    var param = getUrlParam('');
-    var param2 = getUrlParam2('');
-    var param_pmr = getUrlParam_pmr('');
-    var param2_pmr = getUrlParam2_pmr('');
-
-    if (param === "blog") {
-        document.title = "Blog - Der_Googler";
-    } else if (param === "apps") {
-        document.title = "Apps - Der_Googler";
-    } else if (param === "safty") {
-        document.title = "Safty - Der_Googler";
-    } else if (param === "changelogs") {
-        document.title = "Changelogs - Der_Googler";
-    } else if (param === "pmr") {
-        document.title = "PMR-Cloud - Der_Googler";
-    }
-
-    if (param_pmr === "pmr") {
         var xmlhttp44 = new XMLHttpRequest();
         xmlhttp44.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                const users = JSON.parse(this.responseText);
+                const users = JSON.parse(xmlhttp44.responseText);
                 users.map(({ id, reason }) => {
-                    var banneduser = `#/${id}/`;
+                    var banneduser = `/?/${id}/#/`;
                     if (window.location.hash.includes(banneduser)) {
                         $(document).ready(function() {
                             document.title = [id] + " is banned";
                             document.getElementById('body').innerHTML = `<link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,700\" rel=\"stylesheet\"><style>html, body { padding: 0; margin: 0; width: 100%; height: 100%; user-select: none;}* {box-sizing: border-box;}body { text-align: center; padding: 0; background: #d6433b; color: #fff; font-family: Open Sans; }h1 { font-size: 50px; font-weight: 100; text-align: center;}body { font-family: Open Sans; font-weight: 100; font-size: 20px; color: #fff; text-align: center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}article { display: block; width: 700px; padding: 50px; margin: 0 auto; }a { color: #fff; font-weight: bold;}a:hover { text-decoration: none; }svg { width: 75px; margin-top: 1em; }</style><article><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 202.24 202.24\"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 3</title><g id=\"Layer_2\" data-name=\"Layer 2\"><g id=\"Capa_1\" data-name=\"Capa 1\"><path class=\"cls-1\" d=\"M101.12,0A101.12,101.12,0,1,0,202.24,101.12,101.12,101.12,0,0,0,101.12,0ZM159,148.76H43.28a11.57,11.57,0,0,1-10-17.34L91.09,31.16a11.57,11.57,0,0,1,20.06,0L169,131.43a11.57,11.57,0,0,1-10,17.34Z\"/><path class=\"cls-1\" d=\"M101.12,36.93h0L43.27,137.21H159L101.13,36.94Zm0,88.7a7.71,7.71,0,1,1,7.71-7.71A7.71,7.71,0,0,1,101.12,125.63Zm7.71-50.13a7.56,7.56,0,0,1-.11,1.3l-3.8,22.49a3.86,3.86,0,0,1-7.61,0l-3.8-22.49a8,8,0,0,1-.11-1.3,7.71,7.71,0,1,1,15.43,0Z\"/></g></g></svg><h1>${id} is banned</h1><div><p>THIS USER HAS BEEN BY PAGE BANNED<br><b>Reason: </b>${reason}<br></p><p>&mdash; The DG Team</p></div></article>`;
                         });
-                    } else if (param_pmr === "" || param2_pmr === "") {
-                        xmlhttpp_pmr.addEventListener("load", reqListener);
-                        xmlhttpp_pmr.open("GET", "/blog/start-with-pmr-cloud.markdown", true);
-                        xmlhttpp_pmr.send();
-                    } else {
-                        xmlhttpp_pmr.addEventListener("load", reqListener);
-                        xmlhttpp_pmr.open("GET", "https://raw.githubusercontent.com/" + param2_pmr + ".dgsm", true);
-                        xmlhttpp_pmr.send();
                     }
+                    /* else if (param_pmr === "" || param2_pmr === "") {
+                                            xmlhttpp_pmr.addEventListener("load", reqListener);
+                                            xmlhttpp_pmr.open("GET", "/blog/start-with-pmr-cloud.markdown", true);
+                                            xmlhttpp_pmr.send();
+                                        } else {*/
+                    xmlhttpp_pmr.addEventListener("load", reqListener2);
+                    xmlhttpp_pmr.open("GET", "https://api.github.com/repos/" + param_pmr + "/pmr-cloud/contents/" + param2_pmr + ".json", true);
+                    xmlhttpp_pmr.setRequestHeader('Content-Type', 'application/json');
+                    xmlhttpp_pmr.send();
+                    // }
 
                 });
             }
         };
         xmlhttp44.open("GET", "https://pmr-cloud.firebaseio.com/users.json", true);
         xmlhttp44.send();
+
+        function reqListener2() {
+            var pmblog = JSON.parse(xmlhttpp_pmr.responseText);
+            var dgsm_input25 = document.getElementById('content').contentWindow.document;
+            dgsm_input25.open();
+            dgsm_input25.write(html34564 + parseDLGM(marked(unescape(encodeURIComponent(atob(pmblog.content))))) + html3456345);
+            dgsm_input25.close();
+            includeHTML();
+        }
+
+        function getUrlParam_pmr(param) {
+            param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+            var regex = new RegExp("[?]" + param + "/([^&#]*)/");
+            var url = decodeURIComponent(window.location.href);
+            var match = regex.exec(url);
+            return match ? match[1] : "";
+        }
+
+        function getUrlParam2_pmr(param) {
+            param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+            var regex = new RegExp("[#]" + param + "/([^&#]*)/");
+            var url = decodeURIComponent(window.location.href);
+            var match = regex.exec(url);
+            return match ? match[1] : "";
+        }
     } else {
+
+        function dlgowe_event() {
+            // Set the date we're counting down to
+            var countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Display the result in the element
+                document.getElementById("dgo-event").innerHTML = "<b>" + days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s " + "</b>";
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("dgo-event").innerHTML = "<b>" + "2020 IS OVER!" + "</b>";
+                }
+            }, 1000);
+        }
+
+        function getUrlParam_base64(param) {
+            param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+            var regex = new RegExp("[?]" + param + "=([^&#]*)");
+            var url = decodeURIComponent(window.location.href);
+            var match = regex.exec(url);
+            return match ? match[1] : "";
+        }
+
+        var xmlhttpp = new XMLHttpRequest();
+        var param = getUrlParam('');
+        var param2 = getUrlParam2('');
+
+        if (param === "blog") {
+            document.title = "Blog - Der_Googler";
+        } else if (param === "apps") {
+            document.title = "Apps - Der_Googler";
+        } else if (param === "safty") {
+            document.title = "Safty - Der_Googler";
+        } else if (param === "changelogs") {
+            document.title = "Changelogs - Der_Googler";
+        }
+
         if (param === "") {
             xmlhttpp.addEventListener("load", reqListener);
             xmlhttpp.open("GET", "/main/index.markdown", true);
@@ -338,37 +346,31 @@ if (window.location.pathname === "/editor/") {
             xmlhttpp.open("GET", param + "/" + param2 + ".markdown", true);
             xmlhttpp.send();
         }
-    }
 
-    function getUrlParam(param) {
-        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-        var regex = new RegExp("[?]" + param + "/([^&#]*)/");
-        var url = decodeURIComponent(window.location.href);
-        var match = regex.exec(url);
-        return match ? match[1] : "";
-    }
+        function reqListener() {
+            var dgsm_input = document.getElementById('content').contentWindow.document;
+            dgsm_input.open();
+            dgsm_input.write(html34564 + parseDLGM(marked(xmlhttpp.responseText)) + html3456345);
+            dgsm_input.close();
+            includeHTML();
+        }
 
-    function getUrlParam2(param) {
-        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-        var regex = new RegExp("[#]" + param + "/([^&#]*)/");
-        var url = decodeURIComponent(window.location.href);
-        var match = regex.exec(url);
-        return match ? match[1] : "";
-    }
 
-    function getUrlParam_pmr(param) {
-        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-        var regex = new RegExp("[?]" + param + "/([^&#]*)/");
-        var url = decodeURIComponent(window.location.href);
-        var match = regex.exec(url);
-        return match ? match[1] : "";
-    }
+        function getUrlParam(param) {
+            param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+            var regex = new RegExp("[?]" + param + "/([^&#]*)/");
+            var url = decodeURIComponent(window.location.href);
+            var match = regex.exec(url);
+            return match ? match[1] : "";
+        }
 
-    function getUrlParam2_pmr(param) {
-        param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
-        var regex = new RegExp("[#]" + param + "/([^&#]*)/");
-        var url = decodeURIComponent(window.location.href);
-        var match = regex.exec(url);
-        return match ? match[1] : "";
+        function getUrlParam2(param) {
+            param = param.replace(/([\[\](){}*?+^$.\\|])/g, "\\$1");
+            var regex = new RegExp("[#]" + param + "/([^&#]*)/");
+            var url = decodeURIComponent(window.location.href);
+            var match = regex.exec(url);
+            return match ? match[1] : "";
+        }
+
     }
 }
