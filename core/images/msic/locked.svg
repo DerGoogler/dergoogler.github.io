@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1438px" height="1912px" viewbox="0 0 1438 1912" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter_1">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.77254903 0 0 0 0 0.05882353 0 0 0 0 0.05882353 0 0 0 0.49803922 0" />
+    </filter>
+    <path d="M0 0L1158 0L1158 1158L0 1158L0 0Z" id="path_1" />
+    <path d="M386 0C225.626 0 96.5 129.126 96.5 289.5L96.5 337.75C43.425 337.75 0 381.175 0 434.25L0 916.75C0 969.825 43.425 1013.25 96.5 1013.25L675.5 1013.25C728.575 1013.25 772 969.825 772 916.75L772 434.25C772 381.175 728.575 337.75 675.5 337.75L675.5 289.5C675.5 129.126 546.374 0 386 0L386 0ZM386 96.5C495.826 96.5 579 179.674 579 289.5L579 337.75L193 337.75L193 289.5C193 179.674 276.174 96.5 386 96.5L386 96.5ZM386 579C439.075 579 482.5 622.425 482.5 675.5C482.5 728.575 439.075 772 386 772C332.925 772 289.5 728.575 289.5 675.5C289.5 622.425 332.925 579 386 579L386 579Z" transform="translate(193 48.25)" id="path_2" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_2" />
+    </clipPath>
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Group">
+    <path d="M0 0L1437.29 0L1437.29 1911.6L0 1911.6L0 0Z" id="Rectangle" fill="#D3D3D3" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <g id="Lock-icon" transform="translate(139 376)" filter="url(#filter_1)">
+      <path d="M0 0L1158 0L1158 1158L0 1158L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <g id="Shape">
+          <use stroke="none" fill="#FFFFFF" xlink:href="#path_2" fill-rule="evenodd" />
+          <g clip-path="url(#clip_1)">
+            <use xlink:href="#path_2" fill="none" stroke="#000000" stroke-width="40" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
