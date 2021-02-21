@@ -1,0 +1,36 @@
+/*@import "{{ site.theme }}";
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #000;
+}
+
+.page-header {
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to bottom right,
+            #2C3E50, #FD746C,
+            #FF8235, #ffff1c,
+            #92FE9D, #00C9FF,
+            #a044ff, #e73827);
+    background-repeat: no-repeat;
+    background-size: 1000% 1000%;
+    animation: gradient 240s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%
+    }
+
+    50% {
+        background-position: 100% 100%
+    }
+
+    100% {
+        background-position: 0% 0%
+    }
+}
+*/

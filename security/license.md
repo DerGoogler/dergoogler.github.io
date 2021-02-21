@@ -1,8 +1,13 @@
+---
+title: Page License  
+permalink: /security/license/
+---
+
 ## Main Content
 ```
 MIT License
 
-Copyright (c) 2021 realSpaX (Justim Böhm) and Der_Googler (Jimmy Böhm)
+Copyright (c) 2021 Der_Googler
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

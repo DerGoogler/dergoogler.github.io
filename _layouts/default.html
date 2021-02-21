@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US " }}">
+
+<head>
+
+    {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+    <meta charset="UTF-8"> {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/markdown.css">
+    <script src="/assets/js/jquery_3.1.0_.min.js"></script>
+    <script src="/assets/js/anime_3.2.0_.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="https://dergoogler.github.io/" class="name">Der_Googler</a>
+        <a href="https://instagram.com/der_googler" class="contact">Instagram</a>
+    </div>
+
+    <div class="hero" id="particles-js">
+        <div class="w wave"></div>
+        <div class="w wave2"></div>
+        <div class="w wave3"></div>
+        <div class="w wave4"></div>
+    </div>
+    <section class="markdown-body">
+        {{ content }}
+    </section>
+    <script src="/assets/js/default.js"></script>
+</body>
+
+</html>
