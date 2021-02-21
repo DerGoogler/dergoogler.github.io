@@ -1,14 +1,17 @@
 body {
     min-height: 200vh;
     margin: 0;
+    color: #000;
     font-family: "Quicksand", sans-serif;
     overflow-x: hidden;
     overflow: overlay;
+    cursor: default;
 }
 
 body a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 body .header {
@@ -139,10 +142,6 @@ body .hero .wave4 {
     border-radius: 14px;
 }
 
-body {
-    color: #000;
-}
-
 
 /* set button(top and bottom of the scrollbar) */
 
@@ -179,6 +178,7 @@ html a {
 html a:hover,
 html a:focus {
     color: #a6c7f4;
+    cursor: default;
 }
 
 .markdown-body {
@@ -365,6 +365,11 @@ td>code {
     border-radius: 4px;
     position: relative;
     top: -1px;
+}
+
+pre,
+code {
+    cursor: text;
 }
 
 figure {
