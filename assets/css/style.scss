@@ -9,6 +9,7 @@ html {
 
 body {
     margin: 0;
+    cursor: default;
     #runaway-btn {
         position: absolute;
     }
@@ -54,7 +55,8 @@ a {
 
 a:active,
 a:hover {
-    outline: 0
+    outline: 0;
+    cursor: pointer;
 }
 
 abbr[title] {
@@ -126,7 +128,8 @@ kbd,
 pre,
 samp {
     font-family: monospace, monospace;
-    font-size: 1em
+    font-size: 1em;
+    cursor: text;
 }
 
 button,

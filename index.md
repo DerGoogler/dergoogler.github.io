@@ -3,7 +3,7 @@ title: Der_Googler
 ---
 
 # Der_Googler
-Official <div id="runaway-btn">LUL</div>
+Official <runaway id="runaway-btn">LUL</runaway>
 
 ## Docs
 Soon
