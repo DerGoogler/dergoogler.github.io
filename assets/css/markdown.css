@@ -143,6 +143,10 @@ body .hero .wave4 {
     border-radius: 14px;
 }
 
+body {
+    color: #000;
+}
+
 
 /* set button(top and bottom of the scrollbar) */
 
