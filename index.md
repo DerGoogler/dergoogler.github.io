@@ -5,11 +5,11 @@ title: Der_Googler
 # Der_Googler
 Official <runaway id="runaway-btn">LUL</runaway>
 
-## Docs
+### Docs
 Soon
 
-## Apps
+### Apps
 Soon
 
-## Anderes
+### Anderes
 - [License](/security/license/)
