@@ -1516,4 +1516,4 @@ window.particlesJS.load = function(tag_id, path_config_json, callback) {
     xhr.send();
 };
 
-particlesJS.load('particles-js', '/assets/js/cfg/particles.json?', function() {});
+particlesJS.load('particles-js', '/assets/cfg/particles.json?', function() {});
