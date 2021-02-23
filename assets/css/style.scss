@@ -9,9 +9,22 @@ html {
 
 body {
     margin: 0;
-    cursor: pointer;
+    cursor: none;
     #runaway-btn {
         position: absolute;
+    }
+    .cursor {
+        pointer-events: none;
+    }
+    .cursor__ball {
+        position: fixed;
+        top: 0;
+        left: 0;
+        mix-blend-mode: difference;
+        z-index: 1000;
+    }
+    .cursor__ball circle {
+        fill: #f7f8fa;
     }
 }
 
@@ -56,7 +69,6 @@ a {
 a:active,
 a:hover {
     outline: 0;
-    cursor: pointer;
 }
 
 abbr[title] {
