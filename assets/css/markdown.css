@@ -41,7 +41,7 @@ body .header .contact {
 }
 
 body .header.bg {
-    background: linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0);
+    background: linear-gradient(92deg, #00C6FB, #005BEA);
 }
 
 body .hero {
@@ -50,7 +50,7 @@ body .hero {
     height: calc(50vh + 80px);
     min-height: 200px;
     background: #ffce54;
-    background: linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0);
+    background: linear-gradient(92deg, #00C6FB, #005BEA);
 }
 
 body .hero .w {
