@@ -13,4 +13,4 @@ Soon
 
 ### Anderes
 - [License](/security/license/)
-- [Debug](/)
+- [Debug](/debug/test/md/)
