@@ -9,7 +9,8 @@ Official <runaway id="runaway-btn">LUL</runaway>
 Soon
 
 ### Apps
-[Univalcord](/apps/univalcord/1.7.0/)
+- [Univalcord v1.7.0](/apps/univalcord/1.7.0/)
+- [Univalcord v2.0.0](/apps/univalcord/2.0.0/)
 
 ### Anderes
 - [License](/security/license/)

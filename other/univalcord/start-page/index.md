@@ -1,12 +1,12 @@
 # Univalcord
 Use Apps with Custom CSS!
 
-## Allowing Customing Titlebar
+## Allowing Customing Titlebar and Colors
 We allowing the user to add more apps to the title (include with titlebar color, css and title!)
 
-Create this in your local: `C:\univalcord\titlebar.json`
+Create this in your local: `C:\univalcord\titlebar.json` & `C:\univalcord\settings.json`
 
-Example:
+Example of titlebar.json:
 ```json
 [
     {
@@ -49,6 +49,17 @@ Example:
         }
     }
 ]
+```
+
+----
+
+Example of settings.json:
+```json
+{
+    "titlebarColor": "#272727",
+    "title": "Gay Simulator",
+    "startUrl": "https://venge.io"
+}
 ```
            
 > don't use comments

@@ -6,7 +6,7 @@ permalink: /apps/univalcord/1.7.0/
 
 
 # [Unicalcord](https://github.com/DerGoogler/general-releases/releases/tag/1.7.0-Univalcord)
-<runaway id="runaway-btn">Version:</runaway> `1.7.0`.
+Version: `1.7.0`.
 
 - added an titlebar editor
 - now can you load files from webservers
