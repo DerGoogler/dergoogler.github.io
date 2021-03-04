@@ -1,3 +1,9 @@
+---
+title: "The Light Privacy Policy"
+description: "The Light Privacy Policy!"
+permalink: /apps/thelight/privacy/
+---
+
 # The Light Privacy Policy
 
 Der_Googler built the The Light app as a Free app. This SERVICE is provided by Der_Googler at no cost and is intended for use as is.
