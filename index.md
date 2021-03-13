@@ -15,3 +15,5 @@ Soon
 ### Anderes
 - [License](/security/license/)
 - [Debug](/debug/test/md/)
+
+{% include news.html %}
