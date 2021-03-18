@@ -180,6 +180,22 @@ _This is italic text_
 
 ------
 
+# Progressbars
+
+<dg-progress progress="25"></dg-progress>
+<dg-progress progress="50"></dg-progress>
+<dg-progress progress="75"></dg-progress>
+<dg-progress progress="100"></dg-progress>
+
+```html
+<dg-progress progress="25"></dg-progress>
+<dg-progress progress="50"></dg-progress>
+<dg-progress progress="75"></dg-progress>
+<dg-progress progress="100"></dg-progress>
+```
+
+------
+
 # Ignoring Markdown formatting
 
 You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.
