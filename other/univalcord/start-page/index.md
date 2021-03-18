@@ -63,3 +63,7 @@ Example of settings.json:
 ```
            
 > don't use comments
+
+### Project is to:
+<dg-progress progress="100" />
+finshed
