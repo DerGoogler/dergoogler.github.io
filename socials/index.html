@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+  <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+  <script>
+    ons.platform.select('ios')
+  </script>
+</head>
+
+<body>
+  <ons-page>
+    <ons-toolbar>
+      <div class="center">Der_Googler's Socials</div>
+    </ons-toolbar>
+    <ons-list>
+      <ons-list-header>Watch</ons-list-header>
+      <div id="listing"></div>
+    </ons-list>
+    <br />
+    <ons-list modifier="inset">
+      <ons-list-header>More</ons-list-header>
+      <ons-list-item modifier="longdivider">Copyright &copy; 2021 Der_Googler</ons-list-item>
+    </ons-list>
+    <br />
+  </ons-page>
+      <script>
+      var listen = new XMLHttpRequest;
+
+      listen.onreadystatechange = function() {
+
+        if (4 == listen.readyState && 200 == listen.status) {
+          const getting = JSON.parse(listen.responseText);
+          const make = getting.map(item => {
+            return `
+                <ons-list-item onclick="window.open('` + item.link + `')">
+      <div class="left">
+        <img class="list-item__thumbnail" src="` + item.platform + `.png">
+      </div>
+      <div class="center">
+        <span class="list-item__title">` + item.platform + `</span><span class="list-item__subtitle">` + item.username + `</span>
+      </div>
+    </ons-list-item>
+            `;
+          })
+          document.getElementById('listing').innerHTML = make.join("");
+        }
+        if (4 == listen.readyState && 404 == listen.status) {
+          document.getElementById('listing').innerHTML = `<center style="padding-top: 50px;"><b>We've can't find any Social</b><br></center>`;
+        }
+      }, listen.open("GET", "list.json", !0), listen.send();
+    </script>
+</body>
+
+</html>
