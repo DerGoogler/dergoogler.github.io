@@ -2,4 +2,4 @@
 
 ONLY PEOPLE WITH A BIG PP CAN SEE THIS PAGE 🥵
 
-<Button onClick={() => {alert('You're pp is now bigge');}}>get bigger pp</Button>
+<Button onclick={() => {alert('You're pp is now bigge');}}>get bigger pp</Button>
