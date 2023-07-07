@@ -1,0 +1,1 @@
+*,:after,:before{box-sizing:border-box}* ::-webkit-scrollbar,:after ::-webkit-scrollbar,:before ::-webkit-scrollbar{display:none}@media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}::-webkit-scrollbar{display:none}
