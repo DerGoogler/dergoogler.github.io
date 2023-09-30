@@ -7,6 +7,11 @@
 			"children": "Instagram",
 			"icon": "instagram",
 			"href": "https://instagram.com/der_googler"
-		}
+		},
+    {
+			"children": "Telegram",
+			"icon": "telegram",
+			"href": "https://t.me/der_googler"
+    }
 	]
 }
