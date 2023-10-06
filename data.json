@@ -12,6 +12,16 @@
 			"children": "Telegram",
 			"icon": "telegram",
 			"href": "https://t.me/der_googler"
-    }
+    },
+		{
+			"children": "TikTok",
+			"icon": "tiktok",
+			"href": "https://tiktok.com/@der_googler"
+		},
+		{
+			"children": "Reddit",
+			"icon": "reddit",
+			"href": "https://reddit.com/u/Der_Googler"
+		}
 	]
 }
