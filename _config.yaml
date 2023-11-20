@@ -12,9 +12,9 @@ github:
   license:
     name: GPL-3.0
   source:
-    branch: "master"
-    path: "/"
+    branch: null
+    path: null
   repository_url: null
   
-title: null
+title: Googlers Repo
 description: Welcome to the private repository of Der_Googler (also known as DerGoogler)!
