@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stroke Width Scale Calculator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  label {
+    display: block;
+    margin-top: 1rem;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .result {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #222;
+  }
+</style>
+</head>
+<body>
+
+<h2>Stroke Width Scale Calculator</h2>
+
+<label>
+  Original icon size (px):
+  <input type="number" id="originalSize" value="512" min="1" />
+</label>
+
+<label>
+  Original stroke width:
+  <input type="number" id="originalStroke" value="8.74" step="0.01" min="0" />
+</label>
+
+<label>
+  Target icon size (px):
+  <input type="number" id="targetSize" value="24" min="1" />
+</label>
+
+<button onclick="calculateStrokeWidth()">Calculate Scaled Stroke Width</button>
+
+<div class="result" id="result"></div>
+
+<script>
+function calculateStrokeWidth() {
+  const originalSize = parseFloat(document.getElementById('originalSize').value);
+  const originalStroke = parseFloat(document.getElementById('originalStroke').value);
+  const targetSize = parseFloat(document.getElementById('targetSize').value);
+
+  if (originalSize <= 0 || targetSize <= 0 || originalStroke < 0) {
+    document.getElementById('result').textContent = 'Please enter valid positive numbers.';
+    return;
+  }
+
+  // scale factor
+  const scaleFactor = targetSize / originalSize;
+
+  // scaled stroke width
+  const scaledStroke = originalStroke * scaleFactor;
+
+  document.getElementById('result').textContent =
+    `Stroke width to keep visual thickness at target size: ${scaledStroke.toFixed(2)}`;
+}
+</script>
+
+</body>
+</html>
