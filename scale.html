@@ -2,40 +2,75 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Stroke Width Scale Calculator</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     max-width: 400px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 1.5rem;
     background: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  h2 {
+    margin-top: 0;
+    color: #333;
   }
   label {
     display: block;
     margin-top: 1rem;
+    font-weight: 500;
+    color: #555;
   }
   input[type="number"] {
     width: 100%;
-    padding: 0.4rem;
-    margin-top: 0.2rem;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
     box-sizing: border-box;
     font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
   }
   button {
+    width: 100%;
     margin-top: 1.5rem;
-    padding: 0.6rem 1rem;
+    padding: 0.7rem 1rem;
     font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  button:hover {
+    background-color: #0056b3;
   }
   .result {
     margin-top: 1.5rem;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #222;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e9ecef;
+    padding: 0.8rem;
+    border-radius: 4px;
+  }
+  .copy-btn {
+    width: auto;
+    margin-top: 0;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+    background-color: #6c757d;
+  }
+  .copy-btn:hover {
+    background-color: #5a6268;
   }
 </style>
 </head>
@@ -43,24 +78,27 @@
 
 <h2>Stroke Width Scale Calculator</h2>
 
-<label>
+<label for="originalSize">
   Original icon size (px):
-  <input type="number" id="originalSize" value="512" min="1" />
 </label>
+<input type="number" id="originalSize" value="512" min="1" />
 
-<label>
+<label for="originalStroke">
   Original stroke width:
-  <input type="number" id="originalStroke" value="8.74" step="0.01" min="0" />
 </label>
+<input type="number" id="originalStroke" value="8.74" step="0.01" min="0" />
 
-<label>
+<label for="targetSize">
   Target icon size (px):
-  <input type="number" id="targetSize" value="24" min="1" />
 </label>
+<input type="number" id="targetSize" value="24" min="1" />
 
 <button onclick="calculateStrokeWidth()">Calculate Scaled Stroke Width</button>
 
-<div class="result" id="result"></div>
+<div class="result" id="result" style="display:none;" data-stroke-value="">
+  <span id="strokeValue"></span>
+  <button class="copy-btn" onclick="copyStrokeWidth()">Copy</button>
+</div>
 
 <script>
 function calculateStrokeWidth() {
@@ -68,19 +106,41 @@ function calculateStrokeWidth() {
   const originalStroke = parseFloat(document.getElementById('originalStroke').value);
   const targetSize = parseFloat(document.getElementById('targetSize').value);
 
-  if (originalSize <= 0 || targetSize <= 0 || originalStroke < 0) {
-    document.getElementById('result').textContent = 'Please enter valid positive numbers.';
+  if (isNaN(originalSize) || isNaN(originalStroke) || isNaN(targetSize) || originalSize <= 0 || targetSize <= 0 || originalStroke < 0) {
+    alert('Please enter valid positive numbers for all fields.');
     return;
   }
 
-  // scale factor
+  // Calculate the new stroke width by scaling it proportionally.
   const scaleFactor = targetSize / originalSize;
-
-  // scaled stroke width
   const scaledStroke = originalStroke * scaleFactor;
 
-  document.getElementById('result').textContent =
-    `Stroke width to keep visual thickness at target size: ${scaledStroke.toFixed(2)}`;
+  const finalStrokeValue = scaledStroke.toFixed(3); // Using 3 decimal places for more precision
+  
+  const resultDiv = document.getElementById('result');
+  const strokeValueSpan = document.getElementById('strokeValue');
+
+  // Set the text content for the user
+  strokeValueSpan.textContent = `New Stroke Width: ${finalStrokeValue}`;
+  
+  // Store the raw value in a data attribute for the copy function
+  resultDiv.dataset.strokeValue = finalStrokeValue;
+
+  // Display the result
+  resultDiv.style.display = 'flex';
+}
+
+function copyStrokeWidth() {
+  const resultDiv = document.getElementById('result');
+  const strokeToCopy = resultDiv.dataset.strokeValue; // Read value from data attribute
+
+  if (strokeToCopy) {
+    navigator.clipboard.writeText(strokeToCopy).then(() => {
+      alert(`Copied to clipboard: ${strokeToCopy}`);
+    }, () => {
+      alert('Failed to copy to clipboard.');
+    });
+  }
 }
 </script>
 
